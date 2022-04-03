@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>无 证 豚 豚</title>
+  
+  <subtitle>豚豚的个人博客</subtitle>
+  <link href="https://wztuntun.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://wztuntun.github.io/"/>
+  <updated>2022-04-03T15:38:56.272Z</updated>
+  <id>https://wztuntun.github.io/</id>
+  
+  <author>
+    <name>Kevin Lee</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>哈喽！你好！！</title>
+    <link href="https://wztuntun.github.io/2022/04/03/hello-world/"/>
+    <id>https://wztuntun.github.io/2022/04/03/hello-world/</id>
+    <published>2022-04-03T12:48:00.000Z</published>
+    <updated>2022-04-03T15:38:56.272Z</updated>
+    
+    <content type="html"><![CDATA[<p>我是李孙，你也可以叫我豚豚，Kevin，小俊饼干兄。。。这是我的个人博客，用来分享前端学习以及日常生活。</p><!-- ## Quick Start### Create a new post<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a> –&gt;</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我是李孙，你也可以叫我豚豚，Kevin，小俊饼干兄。。。这是我的个人博客，用来分享前端学习以及日常生活。&lt;/p&gt;
+&lt;!-- ## Quick Start
+
+### Create a new post
+
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;tabl</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://wztuntun.github.io/2022/04/03/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://wztuntun.github.io/2022/04/03/%E6%B5%8B%E8%AF%95/</id>
+    <published>2022-04-03T12:39:13.000Z</published>
+    <updated>2022-04-03T15:52:01.288Z</updated>
+    
+    <content type="html"><![CDATA[<p>#正文（暂时没有）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#正文（暂时没有）&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="前端" scheme="https://wztuntun.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="测试" scheme="https://wztuntun.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>

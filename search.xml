@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>哈喽！你好！！</title>
-    <url>/2022/04/01/hello-world/</url>
-    <content><![CDATA[<p>我叫李泽恺，你也可以叫我豚豚，目前是华中科技大学大三的一名学生。</p>
+    <url>/2022/04/03/hello-world/</url>
+    <content><![CDATA[<p>我是李孙，你也可以叫我豚豚，Kevin，小俊饼干兄。。。这是我的个人博客，用来分享前端学习以及日常生活。</p>
 <!-- ## Quick Start
 
 ### Create a new post
@@ -21,5 +21,17 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a> –&gt;</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2022/04/03/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>#正文（暂时没有）</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
   </entry>
 </search>
