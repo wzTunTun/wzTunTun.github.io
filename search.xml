@@ -3,35 +3,160 @@
   <entry>
     <title>哈喽！你好！！</title>
     <url>/2022/04/03/hello-world/</url>
-    <content><![CDATA[<p>我是李孙，你也可以叫我豚豚，Kevin，小俊饼干兄。。。这是我的个人博客，用来分享前端学习以及日常生活。</p>
-<!-- ## Quick Start
-
-### Create a new post
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a> –&gt;</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>测试</title>
-    <url>/2022/04/03/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>#正文（暂时没有）</p>
+    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
+<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
+<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
+<hr>
+<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
 ]]></content>
       <categories>
-        <category>前端</category>
+        <category>日常</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>测试</tag>
+        <tag>自我介绍</tag>
+        <tag>学习进度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>markdown的基本语法</title>
+    <url>/2022/04/04/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<blockquote>
+<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p>
+</blockquote>
+<h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p>在想要设置标题的文字前加#来表示，并用空格隔开。<br>一个#是一级标题，两个##是二级标题，以此类推，最高支持六级标题。</p>
+<pre class="line-numbers language-none"><code class="language-none">1.# 一级标题
+2.## 二级标题
+3.### 三级标题
+4.#### 四级标题
+5.##### 五级标题
+6.###### 六级标题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果如下：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><pre class="line-numbers language-none"><code class="language-none">1.加粗
+**内容**
+2.高亮
+&#96;内容&#96;
+3.删除线
+~~内容~~
+4.斜体
+*内容*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果如下<br>1.加粗<br><strong>内容</strong><br>2.高亮<br><code>内容</code><br>3.删除线<br><del>内容</del><br>4.斜体<br><em>内容</em></p>
+<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p>在引用文字前加&gt;即可。几层引用加几个。<br>(试了一下，貌似可以无限加，但效果会很辣眼睛)</p>
+<pre class="line-numbers language-none"><code class="language-none">&gt;内容
+&gt;&gt;内容
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>效果如下</p>
+<blockquote>
+<p>内容</p>
+<blockquote>
+<p>内容</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="四、分隔线"><a href="#四、分隔线" class="headerlink" title="四、分隔线"></a>四、分隔线</h1><p>三个及以上的-或*即可添加分隔线</p>
+<pre class="line-numbers language-none"><code class="language-none">---
+----
+***
+*****<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果如下，都是相同的</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><pre class="line-numbers language-none"><code class="language-none">语法
+![alt](图片地址 &quot;title&quot;)
+alt,title分别对应html中的属性，皆可省略。
+alt表示显示在图片下方的文字
+title表示鼠标悬停在图片时的显示文本（注意这里要加引号）
+示例
+![MyTunTun](https:&#x2F;&#x2F;ss0.bdstatic.com&#x2F;70cFvHSh_Q1YnxGkpoWK1HF6hhy&#x2F;it&#x2F;
+u&#x3D;702257389,1274025419&amp;fm&#x3D;27&amp;gp&#x3D;0.jpg &quot;我的豚豚&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果如下<br><img src="https://wztuntun.github.io/medias/featureimages/1.jpg" alt="MyTunTun" title="我的豚豚"></p>
+<h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><pre class="line-numbers language-none"><code class="language-none">语法
+[超链接名](超链接地址 &quot;超链接title&quot;)
+title可省略
+示例
+[豚豚的博客](https:&#x2F;&#x2F;wztuntun.github.io&#x2F;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果如下<br><a href="https://wztuntun.github.io/">豚豚的博客</a></p>
+<h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><pre class="line-numbers language-none"><code class="language-none">无序列表（- + *任意一种都行，与文字间用空格隔开）
+- 目录一
++ 目录二
+* 目录三
+有序列表
+1. 名称
+2. 名称
+3. 名称
+列表嵌套
+下一级前敲两个空格即可
+- 一级目录
+  - 二级目录
+  - 二级目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果如下</p>
+<ul>
+<li>目录一</li>
+<li>目录二</li>
+<li>目录三</li>
+</ul>
+<ol>
+<li>名称</li>
+<li>名称</li>
+<li>名称</li>
+</ol>
+<ul>
+<li>一级目录<ul>
+<li>二级目录</li>
+<li>二级目录</li>
+</ul>
+</li>
+</ul>
+<h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><pre class="line-numbers language-none"><code class="language-none">表头|表头|表头
+--|:--:|--:
+内容|内容|内容
+内容|内容|内容
+
+第二行分割表头和内容，表示了对齐方式，默认左对齐，还有 右对齐 和 居中。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果如下</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th align="center">表头</th>
+<th align="right">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+</tbody></table>
+<h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><pre class="line-numbers language-none"><code class="language-none">（&#96;&#96;&#96;）+语言（java）
+内容
+（&#96;&#96;&#96;）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>这里为了演示时防止转译，在三个反引号外加了括号，实际上是没有的，需要去除。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
       </tags>
   </entry>
 </search>
