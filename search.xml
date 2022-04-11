@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>哈喽！你好！！</title>
-    <url>/2022/04/03/hello-world/</url>
-    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
-<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
-<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
-<hr>
-<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>自我介绍</tag>
-        <tag>学习进度</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>innerHTML和createElement效率对比</title>
     <url>/2022/04/10/innerHTML%E5%92%8CcreateElement%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h3 id="动态创建元素的方式"><a href="#动态创建元素的方式" class="headerlink" title="动态创建元素的方式"></a>动态创建元素的方式</h3><ul>
@@ -93,6 +76,77 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>哈喽！你好！！</title>
+    <url>/2022/04/03/hello-world/</url>
+    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
+<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
+<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
+<hr>
+<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>自我介绍</tag>
+        <tag>学习进度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>两数之和-年轻人的第一道力扣</title>
+    <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点————两数之和。</p>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
+<p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
+</blockquote>
+<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class="line-numbers language-none"><code class="language-none">输入：nums &#x3D; [2,7,11,15], target &#x3D; 9
+输出：[0,1]
+解释：因为 nums[0] + nums[1] &#x3D;&#x3D; 9 ，返回 [0, 1] 。
+
+来源：力扣（LeetCode）
+链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;two-sum
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="开始解题"><a href="#开始解题" class="headerlink" title="开始解题"></a>开始解题</h3><h5 id="自己的思考"><a href="#自己的思考" class="headerlink" title="自己的思考"></a>自己的思考</h5><p>由于没有什么算法基础，看到题目首先自然而然想到的就是暴力求解😂。通过两次循环，先从头选定数组的第一个元素，然后遍历剩下的元素，如果找到和等于target的就输出，否则进入下一次循环。<br>代码如下</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var twoSum &#x3D; function(nums, target) &#123;
+    
+    for(var i &#x3D; 0;i&lt;nums.length;i++)&#123;
+        for(var j&#x3D;i+1;j&lt;nums.length;j++)
+            if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;
+                return [i,j];
+                break
+            &#125;
+        &#125;
+        
+    &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当然，效果就很拉跨。<br><img src="https://s1.ax1x.com/2022/04/09/LFGpmd.png" alt="结果" title="执行结果"></p>
+<h5 id="交流学习"><a href="#交流学习" class="headerlink" title="交流学习"></a>交流学习</h5><p>自己用笨办法求解完之后，查看了官方的解法————利用哈希表。</p>
+<h6 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h6><p>运用暴力法寻找和等于target的目标的复杂度太高，由于有两次循环，因此时间复杂度为$O(N^2)$。而运用哈希表，可以将时间复杂度从$O(N^2)$降低到$O(1)$。</p>
+<p>原理就是，我们遍历到数字 x 时，用 target 减去 x，就会得到 y，若 y 存在于哈希表中，我们就可以直接返回结果了。若 y 不存在，那么我们需要将 x 存入哈希表，好让后续遍历的数字使用。<br>代码如下</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">const</span> d <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
+        <span class="token punctuation">&#125;</span>
+        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>最终提交后，执行用时果然快了不少</p>
+<p><img src="https://s1.ax1x.com/2022/04/10/LF0C7D.png" alt="结果"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>力扣</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -234,60 +288,6 @@ title可省略
       </categories>
       <tags>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>两数之和-年轻人的第一道力扣</title>
-    <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点————两数之和。</p>
-<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
-<p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
-</blockquote>
-<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class="line-numbers language-none"><code class="language-none">输入：nums &#x3D; [2,7,11,15], target &#x3D; 9
-输出：[0,1]
-解释：因为 nums[0] + nums[1] &#x3D;&#x3D; 9 ，返回 [0, 1] 。
-
-来源：力扣（LeetCode）
-链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;two-sum
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="开始解题"><a href="#开始解题" class="headerlink" title="开始解题"></a>开始解题</h3><h5 id="自己的思考"><a href="#自己的思考" class="headerlink" title="自己的思考"></a>自己的思考</h5><p>由于没有什么算法基础，看到题目首先自然而然想到的就是暴力求解😂。通过两次循环，先从头选定数组的第一个元素，然后遍历剩下的元素，如果找到和等于target的就输出，否则进入下一次循环。<br>代码如下</p>
-<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var twoSum &#x3D; function(nums, target) &#123;
-    
-    for(var i &#x3D; 0;i&lt;nums.length;i++)&#123;
-        for(var j&#x3D;i+1;j&lt;nums.length;j++)
-            if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;
-                return [i,j];
-                break
-            &#125;
-        &#125;
-        
-    &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>当然，效果就很拉跨。<br><img src="https://s1.ax1x.com/2022/04/09/LFGpmd.png" alt="结果" title="执行结果"></p>
-<h5 id="交流学习"><a href="#交流学习" class="headerlink" title="交流学习"></a>交流学习</h5><p>自己用笨办法求解完之后，查看了官方的解法————利用哈希表。</p>
-<h6 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h6><p>运用暴力法寻找和等于target的目标的复杂度太高，由于有两次循环，因此时间复杂度为$O(N^2)$。而运用哈希表，可以将时间复杂度从$O(N^2)$降低到$O(1)$。</p>
-<p>原理就是，我们遍历到数字 x 时，用 target 减去 x，就会得到 y，若 y 存在于哈希表中，我们就可以直接返回结果了。若 y 不存在，那么我们需要将 x 存入哈希表，好让后续遍历的数字使用。<br>代码如下</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">const</span> d <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
-        <span class="token punctuation">&#125;</span>
-        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>最终提交后，执行用时果然快了不少</p>
-<p><img src="https://s1.ax1x.com/2022/04/10/LF0C7D.png" alt="结果"></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>LeetCode</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>力扣</tag>
-        <tag>算法</tag>
       </tags>
   </entry>
 </search>
