@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>哈喽！你好！！</title>
+    <url>/2022/04/03/hello-world/</url>
+    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
+<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
+<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
+<hr>
+<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
+<hr>
+<h3 id="2022-04-11"><a href="#2022-04-11" class="headerlink" title="2022/04/11"></a>2022/04/11</h3><p>花了一周。。终于把JS啃完了，尝试着刷了几道力扣。目前只是过了一遍主要知识，实际上手较少，等到学完es6,ajax，开始上手react之后，开始着手具体项目。网课讲的JS还是太基础，朋友推荐了两本书，《JavaScript高级程序设计》、《你不知道的JavaScript》，希望能够以此更全面了解JavaScript，学习更加底层的知识。</p>
+<hr>
+<h3 id="2022-04-13"><a href="#2022-04-13" class="headerlink" title="2022/04/13"></a>2022/04/13</h3><p>es6结束。</p>
+<hr>
+<h3 id="2022-04-15"><a href="#2022-04-15" class="headerlink" title="2022/04/15"></a>2022/04/15</h3><p>AJAX结束，开始步入react，以及项目实战。</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>自我介绍</tag>
+        <tag>学习进度</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>innerHTML和createElement效率对比</title>
     <url>/2022/04/10/innerHTML%E5%92%8CcreateElement%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h3 id="动态创建元素的方式"><a href="#动态创建元素的方式" class="headerlink" title="动态创建元素的方式"></a>动态创建元素的方式</h3><ul>
@@ -76,29 +99,6 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>哈喽！你好！！</title>
-    <url>/2022/04/03/hello-world/</url>
-    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
-<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
-<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
-<hr>
-<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
-<hr>
-<h3 id="2022-04-11"><a href="#2022-04-11" class="headerlink" title="2022/04/11"></a>2022/04/11</h3><p>花了一周。。终于把JS啃完了，尝试着刷了几道力扣。目前只是过了一遍主要知识，实际上手较少，等到学完es6,ajax，开始上手react之后，开始着手具体项目。网课讲的JS还是太基础，朋友推荐了两本书，《JavaScript高级程序设计》、《你不知道的JavaScript》，希望能够以此更全面了解JavaScript，学习更加底层的知识。</p>
-<hr>
-<h3 id="2022-04-13"><a href="#2022-04-13" class="headerlink" title="2022/04/13"></a>2022/04/13</h3><p>es6结束。</p>
-<hr>
-<h3 id="2022-04-15"><a href="#2022-04-15" class="headerlink" title="2022/04/15"></a>2022/04/15</h3><p>AJAX结束，开始步入react，以及项目实战。</p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>自我介绍</tag>
-        <tag>学习进度</tag>
       </tags>
   </entry>
   <entry>
@@ -243,42 +243,6 @@ title可省略
       </tags>
   </entry>
   <entry>
-    <title>浅谈受控组件</title>
-    <url>/2022/04/17/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6/</url>
-    <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>跟着网课学习react的过程中，在做评论区模块的过程中，遇到这样一串代码。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">		<span class="token operator">...</span>上部省略
-<span class="token operator">&lt;</span>textarea
-                cols<span class="token operator">=</span><span class="token string">"80"</span>
-                rows<span class="token operator">=</span><span class="token string">"5"</span>
-                placeholder<span class="token operator">=</span><span class="token string">"发条友善的评论"</span>
-                className<span class="token operator">=</span><span class="token string">"ipt-txt"</span>
-                value<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>comment<span class="token punctuation">&#125;</span>
-                onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>textareaChange<span class="token punctuation">&#125;</span>
-              <span class="token operator">/</span><span class="token operator">></span>
-         <span class="token operator">...</span>下部省略<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>他设置了一个comment，再通过onChange监听当前textarea区域，把value值赋给comment，刚看到这串代码时，没明白为什么要以这种方式获取value，查阅相关资料后，才明白，react中表单组件的defaultValue值一旦经过传递后，后续改变都会被忽略，具体来说这原本是一种react非受控组件，其状态是在textarea的react内部控制，不受调用者控制。</p>
-<h3 id="受控组件"><a href="#受控组件" class="headerlink" title="受控组件"></a>受控组件</h3><p>什么是受控组件？  受控组件就是添加了value的组件，而添加了value的组件是不会维护自己的state的，一旦设定了某个值，就需要调用者控制state改变value值。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function-variable function">textareaChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">comment</span><span class="token operator">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>通过onChange时刻监听textarea，改变value的state，将最新的value值传给comment，来完成对组件的控制。</p>
-<blockquote>
-<p>参考：<a href="https://www.cnblogs.com/sexintercourse/p/16082406.html">https://www.cnblogs.com/sexintercourse/p/16082406.html</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习</category>
-        <category>React</category>
-      </categories>
-      <tags>
-        <tag>React</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>两数之和-年轻人的第一道力扣</title>
     <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
@@ -330,6 +294,42 @@ title可省略
         <tag>JavaScript</tag>
         <tag>力扣</tag>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浅谈受控组件</title>
+    <url>/2022/04/17/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6/</url>
+    <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>跟着网课学习react的过程中，在做评论区模块的过程中，遇到这样一串代码。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">		<span class="token operator">...</span>上部省略
+<span class="token operator">&lt;</span>textarea
+                cols<span class="token operator">=</span><span class="token string">"80"</span>
+                rows<span class="token operator">=</span><span class="token string">"5"</span>
+                placeholder<span class="token operator">=</span><span class="token string">"发条友善的评论"</span>
+                className<span class="token operator">=</span><span class="token string">"ipt-txt"</span>
+                value<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>comment<span class="token punctuation">&#125;</span>
+                onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>textareaChange<span class="token punctuation">&#125;</span>
+              <span class="token operator">/</span><span class="token operator">></span>
+         <span class="token operator">...</span>下部省略<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>他设置了一个comment，再通过onChange监听当前textarea区域，把value值赋给comment，刚看到这串代码时，没明白为什么要以这种方式获取value，查阅相关资料后，才明白，react中表单组件的defaultValue值一旦经过传递后，后续改变都会被忽略，具体来说这原本是一种react非受控组件，其状态是在textarea的react内部控制，不受调用者控制。</p>
+<h3 id="受控组件"><a href="#受控组件" class="headerlink" title="受控组件"></a>受控组件</h3><p>什么是受控组件？  受控组件就是添加了value的组件，而添加了value的组件是不会维护自己的state的，一旦设定了某个值，就需要调用者控制state改变value值。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function-variable function">textareaChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+      <span class="token literal-property property">comment</span><span class="token operator">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>通过onChange时刻监听textarea，改变value的state，将最新的value值传给comment，来完成对组件的控制。</p>
+<blockquote>
+<p>参考：<a href="https://www.cnblogs.com/sexintercourse/p/16082406.html">https://www.cnblogs.com/sexintercourse/p/16082406.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>React</category>
+      </categories>
+      <tags>
+        <tag>React</tag>
       </tags>
   </entry>
   <entry>
