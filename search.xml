@@ -245,7 +245,7 @@ title可省略
   <entry>
     <title>两数之和-年轻人的第一道力扣</title>
     <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点————两数之和。</p>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
 <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
 <p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
 </blockquote>
@@ -297,14 +297,9 @@ title可省略
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/04/18/%E9%9D%A2%E8%AF%95-%E5%BC%BA%E7%BC%93%E5%AD%98%E5%8D%8F%E5%95%86%E7%BC%93%E5%AD%98/</url>
-    <content><![CDATA[<p>title: 面试专题（一）<br>date: 2022-04-1 22:01<br>tags: </p>
-<pre><code>- 面试
-categories:
-    - 学习
-</code></pre>
-<h3 id="浏览器缓存-强缓存和协商缓存"><a href="#浏览器缓存-强缓存和协商缓存" class="headerlink" title="浏览器缓存-强缓存和协商缓存"></a>浏览器缓存-强缓存和协商缓存</h3><p>浏览器缓存是浏览器在本地对用户最近请求过的文档进行存储，当访问者再次访问同一页面时，浏览器就可以直接从本地加载文档<br>优点：减少沉郁的数据传输<br>      减少服务器负担<br>      加快客户端加载网页的速度</p>
+    <title>面试专题（一）</title>
+    <url>/2022/04/18/%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="浏览器缓存-强缓存和协商缓存"><a href="#浏览器缓存-强缓存和协商缓存" class="headerlink" title="浏览器缓存-强缓存和协商缓存"></a>浏览器缓存-强缓存和协商缓存</h3><p>浏览器缓存是浏览器在本地对用户最近请求过的文档进行存储，当访问者再次访问同一页面时，浏览器就可以直接从本地加载文档<br>优点：减少沉郁的数据传输<br>      减少服务器负担<br>      加快客户端加载网页的速度</p>
 <p>浏览器缓存主要分为强缓存和协商缓存。</p>
 <ul>
 <li>强缓存不会向服务器发送请求，而是直接从缓存中存入读取，浏览器在请求某一资源的时候，会先获取该资源的header信息，根据header中的Cache-Control和Expires来判断是否过期。若没过期会直接从缓存中获取信息。</li>
@@ -314,6 +309,12 @@ categories:
 <p>参考文档：<a href="https://blog.csdn.net/zouzixuan/article/details/84677548?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165028089316780265412126%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165028089316780265412126&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-84677548.142%5Ev9%5Econtrol,157%5Ev4%5Enew_style&amp;utm_term=%E9%9D%A2%E8%AF%95+%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/zouzixuan/article/details/84677548?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165028089316780265412126%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165028089316780265412126&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-84677548.142^v9^control,157^v4^new_style&amp;utm_term=%E9%9D%A2%E8%AF%95+%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98&amp;spm=1018.2226.3001.4187</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
   </entry>
   <entry>
     <title>浅谈受控组件</title>
