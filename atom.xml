@@ -6,7 +6,7 @@
   <link href="https://wztuntun.github.io/atom.xml" rel="self"/>
   
   <link href="https://wztuntun.github.io/"/>
-  <updated>2022-04-18T11:27:50.846Z</updated>
+  <updated>2022-04-27T03:15:35.188Z</updated>
   <id>https://wztuntun.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://wztuntun.github.io/2022/04/18/%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>https://wztuntun.github.io/2022/04/18/%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/</id>
     <published>2022-04-18T11:27:00.000Z</published>
-    <updated>2022-04-18T11:27:50.846Z</updated>
+    <updated>2022-04-27T03:15:35.188Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="浏览器缓存-强缓存和协商缓存"><a href="#浏览器缓存-强缓存和协商缓存" class="headerlink" title="浏览器缓存-强缓存和协商缓存"></a>浏览器缓存-强缓存和协商缓存</h3><p>浏览器缓存是浏览器在本地对用户最近请求过的文档进行存储，当访问者再次访问同一页面时，浏览器就可以直接从本地加载文档<br>优点：减少沉郁的数据传输<br>      减少服务器负担<br>      加快客户端加载网页的速度</p><p>浏览器缓存主要分为强缓存和协商缓存。</p><ul><li>强缓存不会向服务器发送请求，而是直接从缓存中存入读取，浏览器在请求某一资源的时候，会先获取该资源的header信息，根据header中的Cache-Control和Expires来判断是否过期。若没过期会直接从缓存中获取信息。</li><li>协商缓存是在强缓存失效后，浏览器携带缓存标识向服务器发送请求，服务器根据缓存标识决定是否使用缓存。如果显示过期，则浏览器会向服务器发送请求，并且会携带第一次请求返回的有关的header字段，就比如说，客户端会将先前服务端发送的etag发送给服务器，服务器会将这个etag与服务器的进行对比，如果相同，会返回状态304，客户端继续使用本地缓存，如果不相同，会返回状态200，将最新资源发给客户端</li></ul><blockquote><p>参考文档：<a href="https://blog.csdn.net/zouzixuan/article/details/84677548?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165028089316780265412126%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165028089316780265412126&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-84677548.142%5Ev9%5Econtrol,157%5Ev4%5Enew_style&amp;utm_term=%E9%9D%A2%E8%AF%95+%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/zouzixuan/article/details/84677548?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165028089316780265412126%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165028089316780265412126&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-84677548.142^v9^control,157^v4^new_style&amp;utm_term=%E9%9D%A2%E8%AF%95+%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98&amp;spm=1018.2226.3001.4187</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h3 id="浏览器缓存-强缓存和协商缓存"><a href="#浏览器缓存-强缓存和协商缓存" class="headerlink" title="浏览器缓存-强缓存和协商缓存"></a>浏览器缓存-强缓存和协商缓存</h3><p>浏览器缓存是浏览器在本地对用户最近请求过的文档进行存储，当访问者再次访问同一页面时，浏览器就可以直接从本地加载文档<br>优点：减少沉郁的数据传输<br>减少服务器负担<br>加快客户端加载网页的速度</p><p>浏览器缓存主要分为强缓存和协商缓存。</p><ul><li>强缓存不会向服务器发送请求，而是直接从缓存中存入读取，浏览器在请求某一资源的时候，会先获取该资源的 header 信息，根据 header 中的 Cache-Control 和 Expires 来判断是否过期。若没过期会直接从缓存中获取信息。</li><li>协商缓存是在强缓存失效后，浏览器携带缓存标识向服务器发送请求，服务器根据缓存标识决定是否使用缓存。如果显示过期，则浏览器会向服务器发送请求，并且会携带第一次请求返回的有关的 header 字段，就比如说，客户端会将先前服务端发送的 etag 发送给服务器，服务器会将这个 etag 与服务器的进行对比，如果相同，会返回状态 304，客户端继续使用本地缓存，如果不相同，会返回状态 200，将最新资源发给客户端</li></ul><blockquote><p>参考文档：<a href="https://blog.csdn.net/zouzixuan/article/details/84677548?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165028089316780265412126%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165028089316780265412126&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-84677548.142%5Ev9%5Econtrol,157%5Ev4%5Enew_style&amp;utm_term=%E9%9D%A2%E8%AF%95+%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/zouzixuan/article/details/84677548?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165028089316780265412126%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=165028089316780265412126&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-84677548.142^v9^control,157^v4^new_style&amp;utm_term=%E9%9D%A2%E8%AF%95+%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98&amp;spm=1018.2226.3001.4187</a></p></blockquote>]]></content>
     
     
       
