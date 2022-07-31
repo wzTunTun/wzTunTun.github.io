@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="浅谈受控组件, 无 证 豚 豚">
+    <meta name="keywords" content="项目概况, 无 证 豚 豚">
     <meta name="description" content="Tunlog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>浅谈受控组件 | 无 证 豚 豚</title>
+    <title>项目概况 | 无 证 豚 豚</title>
     <link rel="icon" type="image/png" href="/icon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -233,12 +233,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">浅谈受控组件</h1>
+                    <h1 class="description center-align post-title">项目概况</h1>
                 </div>
             </div>
         </div>
@@ -354,8 +354,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/React/">
-                                <span class="chip bg-color">React</span>
+                            <a href="/tags/%E9%A1%B9%E7%9B%AE/">
+                                <span class="chip bg-color">项目</span>
                             </a>
                         
                     </div>
@@ -366,8 +366,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                学习
+                            <a href="/categories/%E9%A1%B9%E7%9B%AE/" class="post-category">
+                                项目
                             </a>
                         
                     </div>
@@ -379,7 +379,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-17
+                    2022-07-31
                 </div>
                 
 
@@ -403,31 +403,224 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>跟着网课学习react的过程中，在做评论区模块的过程中，遇到这样一串代码。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">		<span class="token operator">...</span>上部省略
-<span class="token operator">&lt;</span>textarea
-                cols<span class="token operator">=</span><span class="token string">"80"</span>
-                rows<span class="token operator">=</span><span class="token string">"5"</span>
-                placeholder<span class="token operator">=</span><span class="token string">"发条友善的评论"</span>
-                className<span class="token operator">=</span><span class="token string">"ipt-txt"</span>
-                value<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>comment<span class="token punctuation">&#125;</span>
-                onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>textareaChange<span class="token punctuation">&#125;</span>
-              <span class="token operator">/</span><span class="token operator">></span>
-         <span class="token operator">...</span>下部省略<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <pre class="line-numbers language-none"><code class="language-none">├─ src
+│  ├─ App.jsx
+│  ├─ App.scss
+│  ├─ components
+│  │  ├─ AttributesPanel
+│  │  │  ├─ AttributesPanel.jsx
+│  │  │  └─ AttributesPanel.module.css
+│  │  ├─ ComponentItem
+│  │  │  ├─ ComponentItem.jsx
+│  │  │  └─ ComponentItem.module.css
+│  │  ├─ Designer
+│  │  │  ├─ Designer.jsx
+│  │  │  └─ Designer.module.css
+│  │  ├─ EditorNav
+│  │  │  ├─ Bar
+│  │  │  │  ├─ Bar.jsx
+│  │  │  │  └─ Bar.module.scss
+│  │  │  ├─ EditorNav.jsx
+│  │  │  └─ EditorNav.module.scss
+│  │  ├─ NavigationBar		&#x2F;&#x2F; 顶部导航栏(上方EditorNav为Editor的导航栏)
+│  │  │  ├─ Bar			&#x2F;&#x2F; 导航栏选项
+│  │  │  │  ├─ Bar.jsx
+│  │  │  │  └─ Bar.module.scss
+│  │  │  ├─ NavigationBar.jsx
+│  │  │  └─ NavigationBar.module.scss
+│  │  ├─ Sider				&#x2F;&#x2F; 左侧菜单
+│  │  │  ├─ Sider.jsx
+│  │  │  └─ Sider.module.scss
+│  │  ├─ TemplateCard		&#x2F;&#x2F; 模板中心选项卡
+│  │  │  ├─ TemplateCard.jsx
+│  │  │  └─ TemplateCard.module.scss
+│  │  └─ WorksCard			&#x2F;&#x2F; 作品选项卡
+│  │     ├─ WorksCard.jsx
+│  │     └─ WorksCard.module.scss
+│  ├─ favicon.svg
+│  ├─ index.scss
+│  ├─ logo.svg
+│  ├─ main.jsx
+│  ├─ media					
+│  │  └─ icon				&#x2F;&#x2F; 存放各类图标，来源为iconfont
+│  │     ├─ demo.css
+│  │     ├─ demo_index.html
+│  │     ├─ iconfont.css
+│  │     ├─ iconfont.js
+│  │     ├─ iconfont.json
+│  │     ├─ iconfont.ttf
+│  │     ├─ iconfont.woff
+│  │     ├─ iconfont.woff2
+│  │     └─ tianjia.svg
+│  └─ pages
+│     ├─ Editor
+│     │  ├─ Editor.jsx
+│     │  └─ Editor.module.css
+│     ├─ login
+│     │  ├─ index.js
+│     │  └─ index.scss
+│     ├─ MyWork				&#x2F;&#x2F; 我的作品
+│     │  ├─ MyWork.jsx
+│     │  └─ MyWork.module.scss
+│     ├─ TemplateCentre		&#x2F;&#x2F; 模板中心
+│     │  ├─ TemplateCentre.jsx
+│     │  └─ TemplateCentre.module.scss
+│     └─ workmanager			&#x2F;&#x2F; 主页面
+│        ├─ WorkManager.jsx
+│        └─ WorkManager.module.scss<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>他设置了一个comment，再通过onChange监听当前textarea区域，把value值赋给comment，刚看到这串代码时，没明白为什么要以这种方式获取value，查阅相关资料后，才明白，react中表单组件的defaultValue值一旦经过传递后，后续改变都会被忽略，具体来说这原本是一种react非受控组件，其状态是在textarea的react内部控制，不受调用者控制。</p>
-<h3 id="受控组件"><a href="#受控组件" class="headerlink" title="受控组件"></a>受控组件</h3><p>什么是受控组件？  受控组件就是添加了value的组件，而添加了value的组件是不会维护自己的state的，一旦设定了某个值，就需要调用者控制state改变value值。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function-variable function">textareaChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">comment</span><span class="token operator">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Workmanager涉及的文件为上方添加注释的所有文件</p>
+<h4 id="Bar组件"><a href="#Bar组件" class="headerlink" title="Bar组件"></a>Bar组件</h4><p><img src="https://s1.ax1x.com/2022/07/31/vF3Fw8.png" alt="MyTunTun" title="我的豚豚"></p>
+<pre class="line-numbers language-(javascript)" data-language="(javascript)"><code class="language-(javascript)">function Bar(props) &#123;
+  const &#123; click, content, active &#125; &#x3D; props;
 
-<p>通过onChange时刻监听textarea，改变value的state，将最新的value值传给comment，来完成对组件的控制。</p>
-<blockquote>
-<p>参考：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/sexintercourse/p/16082406.html">https://www.cnblogs.com/sexintercourse/p/16082406.html</a></p>
-</blockquote>
+  return (
+    &lt;div
+      className&#x3D;&#123;!active ? style.bar : &#96;$&#123;style.bar&#125; $&#123;style.bar_active&#125;&#96;&#125;
+      onClick&#x3D;&#123;() &#x3D;&gt; click()&#125;
+    &gt;
+      &#123;content&#125;
+    &lt;&#x2F;div&gt;
+  );
+&#125;
 
+export default Bar;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>传入参数：click content acticve (后期会加上src或者其他功能)</p>
+<h4 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h4><pre class="line-numbers language-none"><code class="language-none">const NavigationBar &#x3D; () &#x3D;&gt; &#123;
+  const [barlist, setBarList] &#x3D; useState([
+    &#123;
+      content: &quot;Gitee&quot;,
+      active: false,
+    &#125;,
+    &#123;
+      content: &quot;Github&quot;,
+      active: false,
+      src: &quot;https:&#x2F;&#x2F;github.com&#x2F;8xbitDevs&#x2F;low-code-h5&quot;,
+    &#125;,
+  ]);
+
+  &#x2F;&#x2F; bar点击状态改变（单选）
+  const changeStateBar &#x3D; (clickIndex) &#x3D;&gt; &#123;
+    const newBarlist &#x3D; barlist.map((item, index) &#x3D;&gt; &#123;
+      if (clickIndex &#x3D;&#x3D;&#x3D; index) &#123;
+        return &#123;
+          ...item,
+          active: !item.active,
+        &#125;;
+      &#125; else &#123;
+        return &#123;
+          ...item,
+          active: false,
+        &#125;;
+      &#125;
+    &#125;);
+    setBarList(newBarlist);
+  &#125;;
+
+  return (
+    &lt;header className&#x3D;&#123;style.container&#125;&gt;
+      &lt;Link to&#x3D;&quot;&#x2F;&quot;&gt;
+        &lt;h3 className&#x3D;&#123;style.logo&#125;&gt;8xbitsDevs&lt;&#x2F;h3&gt;
+      &lt;&#x2F;Link&gt;
+      &lt;div className&#x3D;&#123;style.barLayout&#125;&gt;
+        &#123;barlist.map((item, index) &#x3D;&gt; &#123;
+          return (
+            &lt;Bar
+              key&#x3D;&#123;index&#125;
+              content&#x3D;&#123;item.content&#125;
+              active&#x3D;&#123;item.active&#125;
+              src &#x3D; &#123;item.src&#125;
+              click&#x3D;&#123;() &#x3D;&gt; &#123;
+                changeStateBar(index);
+              &#125;&#125;
+            &gt;&lt;&#x2F;Bar&gt;
+          );
+        &#125;)&#125;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;header&gt;
+  );
+&#125;;
+
+export default NavigationBar;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>根据barlist返回按键</p>
+<h4 id="左侧导航栏"><a href="#左侧导航栏" class="headerlink" title="左侧导航栏"></a>左侧导航栏</h4><pre class="line-numbers language-none"><code class="language-none">function SideBar() &#123;
+  const [secdis, setsecdis] &#x3D; useState([
+    &#123;
+      oc: false,
+    &#125;,
+    &#123;
+      oc: false,
+    &#125;,
+  ]);
+
+  &#x2F;&#x2F; 列表展开函数，参数：目标二级菜单在左右二级菜单中的顺序，从0开始
+  const OpenSec &#x3D; (secindex) &#x3D;&gt; &#123;
+    const newsecdis &#x3D; secdis.map((item, index) &#x3D;&gt; &#123;
+      if (secindex &#x3D;&#x3D;&#x3D; index) &#123;
+        return &#123;
+          oc: !secdis[index].oc,
+        &#125;;
+      &#125; else &#123;
+        return &#123;
+          ...item,
+        &#125;;
+      &#125;
+    &#125;);
+    setsecdis(newsecdis);
+  &#125;;
+
+  return (
+    &lt;div className&#x3D;&#123;style.container&#125;&gt;
+      &lt;Link to&#x3D;&#123;&#39;&#x2F;&#39;&#125; className&#x3D;&#123;style.text&#125;&gt;
+        &lt;span className&#x3D;&quot;iconfont icon-wode&quot;&gt;&lt;&#x2F;span&gt;
+        我的作品
+        &lt;div
+          className&#x3D;&#123;
+            !secdis[0].oc
+              ? style.handler
+              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
+          &#125;
+          style&#x3D;&#123;&#123; visibility: &quot;hidden&quot; &#125;&#125;
+        &gt;&lt;&#x2F;div&gt;
+      &lt;&#x2F;Link&gt;
+      &lt;div className&#x3D;&#123;style.text&#125; onClick&#x3D;&#123;() &#x3D;&gt; OpenSec(0)&#125;&gt;
+        &lt;span className&#x3D;&quot;iconfont icon-shujukanban&quot;&gt;&lt;&#x2F;span&gt;
+        数据中心
+        &lt;div
+          className&#x3D;&#123;
+            !secdis[0].oc
+              ? style.handler
+              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
+          &#125;
+        &gt;&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div
+        className&#x3D;&#123;!secdis[0].oc ? style.sec : &#96;$&#123;style.sec&#125; $&#123;style.sec_open&#125;&#96;&#125;
+      &gt;
+        &lt;div className&#x3D;&#123;style.text&#125;&gt;基础数据&lt;&#x2F;div&gt;
+        &lt;div className&#x3D;&#123;style.text&#125;&gt;基础数据2&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div className&#x3D;&#123;style.text&#125; onClick&#x3D;&#123;() &#x3D;&gt; OpenSec(1)&#125;&gt;
+        &lt;span className&#x3D;&quot;iconfont icon-mobankuangjia-xianxing&quot;&gt;&lt;&#x2F;span&gt;
+        模板中心
+        &lt;div
+          className&#x3D;&#123;
+            !secdis[1].oc
+              ? style.handler
+              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
+          &#125;
+        &gt;&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div
+        className&#x3D;&#123;!secdis[1].oc ? style.sec : &#96;$&#123;style.sec&#125; $&#123;style.sec_open&#125;&#96;&#125;
+      &gt;
+        &lt;Link to&#x3D;&#123;&#39;&#x2F;template&#39;&#125; className&#x3D;&#123;style.text&#125;&gt;模板列表&lt;&#x2F;Link&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  );
+&#125;
+
+export default SideBar;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -453,7 +646,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wztuntun.github.io/2022/04/17/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6/">https://wztuntun.github.io/2022/04/17/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6/</a>
+                    <a href="https://wztuntun.github.io/2022/07/31/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/">https://wztuntun.github.io/2022/07/31/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -491,8 +684,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/React/">
-                                    <span class="chip bg-color">React</span>
+                                <a href="/tags/%E9%A1%B9%E7%9B%AE/">
+                                    <span class="chip bg-color">项目</span>
                                 </a>
                             
                         </div>
@@ -799,17 +992,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/04/18/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98-%E5%BC%BA%E7%BC%93%E5%AD%98%E5%92%8C%E5%8D%8F%E5%95%86%E7%BC%93%E5%AD%98/">
+                <a href="/2022/07/31/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="浏览器缓存-强缓存和协商缓存">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="项目概况">
                         
-                        <span class="card-title">浏览器缓存-强缓存和协商缓存</span>
+                        <span class="card-title">项目概况</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -819,26 +1013,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    学习
+                            <a href="/categories/%E9%A1%B9%E7%9B%AE/" class="post-category">
+                                    项目
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9D%A2%E8%AF%95/">
-                        <span class="chip bg-color">面试</span>
+                    <a href="/tags/%E9%A1%B9%E7%9B%AE/">
+                        <span class="chip bg-color">项目</span>
                     </a>
                     
                 </div>
@@ -852,13 +1047,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/10/innerHTML%E5%92%8CcreateElement%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94/">
+                <a href="/2022/07/07/ot%E5%92%8Ccrdt/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="innerHTML和createElement效率对比">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="协同算法之OT和CRDT">
                         
-                        <span class="card-title">innerHTML和createElement效率对比</span>
+                        <span class="card-title">协同算法之OT和CRDT</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -869,7 +1064,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-07
                             </span>
                         <span class="publish-author">
                             
@@ -886,8 +1081,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C/">
+                        <span class="chip bg-color">多人协同</span>
                     </a>
                     
                 </div>
