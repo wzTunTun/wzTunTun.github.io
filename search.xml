@@ -506,25 +506,6 @@ title可省略
       </tags>
   </entry>
   <entry>
-    <title>协同算法之OT和CRDT</title>
-    <url>/2022/07/07/ot%E5%92%8Ccrdt/</url>
-    <content><![CDATA[<h3 id="多人协同编辑"><a href="#多人协同编辑" class="headerlink" title="多人协同编辑"></a>多人协同编辑</h3><p>多人协同编辑，就是像腾讯文档等在线产品一样，可以两人及以上同时编辑一个文件，而双方的编辑操作互不干扰，能够自动解决冲突。<br>而目前，协同编辑的基本实现思路主要有两种</p>
-<ul>
-<li>CRDT</li>
-<li>OT<h4 id="CRDT"><a href="#CRDT" class="headerlink" title="CRDT"></a>CRDT</h4>CRDT即为无冲突可复制数据类型，是一些分布式系统中适应于不同场景且可以保持最终以执行的数据结构统称。CRDT本身只是一个概念，需要自行实现数据结构。<h5 id="CRDT的类型"><a href="#CRDT的类型" class="headerlink" title="CRDT的类型"></a>CRDT的类型</h5></li>
-<li>基于操作状态的CRDT</li>
-<li>基于状态的CRDT<br>这两种CRDT在数学上是等价的，可以相互装换。基于操作的CRDT需要消息中间件提供额外的支持，对操作命名并保证通信过程中不会丢失或者交递信息时保证消息唯一。基于状态的消息中间件则需要通信时保证全部的状态完好的交递。<h5 id="基于操作的CRDT"><a href="#基于操作的CRDT" class="headerlink" title="基于操作的CRDT"></a>基于操作的CRDT</h5>基于操作的CRDT又称CMCRDT，CMCRDT在传播时，只包含数据更新操作信息。比方说，一个整数在执行了(+10), (-20) 操作后，CmRDT 广播时则只包含关于这个整数进行了(+10), (-20) 操作。其他的 DC 收到这个 CmRDT 后会在本地对相应的数据执行 CmRDT 中包含的操作。CmRDT 所能携带的操作必须是可交换的，通信模块必须保证所有 CmRDT 包都能被正确交递，但是顺序无需保证。<h5 id="基于状态的CRDT"><a href="#基于状态的CRDT" class="headerlink" title="基于状态的CRDT"></a>基于状态的CRDT</h5>基于状态的 CRDTs又称为CvRDTs。CvRDTs 会将本地全部的数据状态传播给其他 DC, 这些状态在接受到后会被一个函数做 merge 处理，所以这些状态必须是可交换的，关联的，幂等的。merge 函数会为在 CvRDT 之间提供一个 join 操作，将接收到 CvRDT 与本地数据合并。<h4 id="OT"><a href="#OT" class="headerlink" title="OT"></a>OT</h4>OT即为操作转换，是指对文档编辑以及同时编辑冲突解决的一类技术，且依赖服务器来保持最终一致性。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>多人协同</tag>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>innerHTML和createElement效率对比</title>
     <url>/2022/04/10/innerHTML%E5%92%8CcreateElement%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h3 id="动态创建元素的方式"><a href="#动态创建元素的方式" class="headerlink" title="动态创建元素的方式"></a>动态创建元素的方式</h3><ul>
@@ -602,6 +583,25 @@ title可省略
       </tags>
   </entry>
   <entry>
+    <title>协同算法之OT和CRDT</title>
+    <url>/2022/07/07/ot%E5%92%8Ccrdt/</url>
+    <content><![CDATA[<h3 id="多人协同编辑"><a href="#多人协同编辑" class="headerlink" title="多人协同编辑"></a>多人协同编辑</h3><p>多人协同编辑，就是像腾讯文档等在线产品一样，可以两人及以上同时编辑一个文件，而双方的编辑操作互不干扰，能够自动解决冲突。<br>而目前，协同编辑的基本实现思路主要有两种</p>
+<ul>
+<li>CRDT</li>
+<li>OT<h4 id="CRDT"><a href="#CRDT" class="headerlink" title="CRDT"></a>CRDT</h4>CRDT即为无冲突可复制数据类型，是一些分布式系统中适应于不同场景且可以保持最终以执行的数据结构统称。CRDT本身只是一个概念，需要自行实现数据结构。<h5 id="CRDT的类型"><a href="#CRDT的类型" class="headerlink" title="CRDT的类型"></a>CRDT的类型</h5></li>
+<li>基于操作状态的CRDT</li>
+<li>基于状态的CRDT<br>这两种CRDT在数学上是等价的，可以相互装换。基于操作的CRDT需要消息中间件提供额外的支持，对操作命名并保证通信过程中不会丢失或者交递信息时保证消息唯一。基于状态的消息中间件则需要通信时保证全部的状态完好的交递。<h5 id="基于操作的CRDT"><a href="#基于操作的CRDT" class="headerlink" title="基于操作的CRDT"></a>基于操作的CRDT</h5>基于操作的CRDT又称CMCRDT，CMCRDT在传播时，只包含数据更新操作信息。比方说，一个整数在执行了(+10), (-20) 操作后，CmRDT 广播时则只包含关于这个整数进行了(+10), (-20) 操作。其他的 DC 收到这个 CmRDT 后会在本地对相应的数据执行 CmRDT 中包含的操作。CmRDT 所能携带的操作必须是可交换的，通信模块必须保证所有 CmRDT 包都能被正确交递，但是顺序无需保证。<h5 id="基于状态的CRDT"><a href="#基于状态的CRDT" class="headerlink" title="基于状态的CRDT"></a>基于状态的CRDT</h5>基于状态的 CRDTs又称为CvRDTs。CvRDTs 会将本地全部的数据状态传播给其他 DC, 这些状态在接受到后会被一个函数做 merge 处理，所以这些状态必须是可交换的，关联的，幂等的。merge 函数会为在 CvRDT 之间提供一个 join 操作，将接收到 CvRDT 与本地数据合并。<h4 id="OT"><a href="#OT" class="headerlink" title="OT"></a>OT</h4>OT即为操作转换，是指对文档编辑以及同时编辑冲突解决的一类技术，且依赖服务器来保持最终一致性。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>多人协同</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>两数之和-年轻人的第一道力扣</title>
     <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
@@ -649,8 +649,8 @@ title可省略
         <category>学习</category>
       </categories>
       <tags>
-        <tag>算法</tag>
         <tag>JavaScript</tag>
+        <tag>算法</tag>
         <tag>力扣</tag>
       </tags>
   </entry>
