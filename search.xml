@@ -1,6 +1,299 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>/2022/07/31/8xbitsDevs/</url>
+    <content><![CDATA[<pre class="line-numbers language-none"><code class="language-none">├─ src
+│  ├─ App.jsx
+│  ├─ App.scss
+│  ├─ components
+│  │  ├─ AttributesPanel
+│  │  │  ├─ AttributesPanel.jsx
+│  │  │  └─ AttributesPanel.module.css
+│  │  ├─ ComponentItem
+│  │  │  ├─ ComponentItem.jsx
+│  │  │  └─ ComponentItem.module.css
+│  │  ├─ Designer
+│  │  │  ├─ Designer.jsx
+│  │  │  └─ Designer.module.css
+│  │  ├─ EditorNav
+│  │  │  ├─ Bar
+│  │  │  │  ├─ Bar.jsx
+│  │  │  │  └─ Bar.module.scss
+│  │  │  ├─ EditorNav.jsx
+│  │  │  └─ EditorNav.module.scss
+│  │  ├─ NavigationBar		&#x2F;&#x2F; 顶部导航栏(上方EditorNav为Editor的导航栏)
+│  │  │  ├─ Bar			&#x2F;&#x2F; 导航栏选项
+│  │  │  │  ├─ Bar.jsx
+│  │  │  │  └─ Bar.module.scss
+│  │  │  ├─ NavigationBar.jsx
+│  │  │  └─ NavigationBar.module.scss
+│  │  ├─ Sider				&#x2F;&#x2F; 左侧菜单
+│  │  │  ├─ Sider.jsx
+│  │  │  └─ Sider.module.scss
+│  │  ├─ TemplateCard		&#x2F;&#x2F; 模板中心选项卡
+│  │  │  ├─ TemplateCard.jsx
+│  │  │  └─ TemplateCard.module.scss
+│  │  └─ WorksCard			&#x2F;&#x2F; 作品选项卡
+│  │     ├─ WorksCard.jsx
+│  │     └─ WorksCard.module.scss
+│  ├─ favicon.svg
+│  ├─ index.scss
+│  ├─ logo.svg
+│  ├─ main.jsx
+│  ├─ media
+│  │  └─ icon				&#x2F;&#x2F; 存放各类图标，来源为iconfont
+│  │     ├─ demo.css
+│  │     ├─ demo_index.html
+│  │     ├─ iconfont.css
+│  │     ├─ iconfont.js
+│  │     ├─ iconfont.json
+│  │     ├─ iconfont.ttf
+│  │     ├─ iconfont.woff
+│  │     ├─ iconfont.woff2
+│  │     └─ tianjia.svg
+│  └─ pages
+│     ├─ Editor
+│     │  ├─ Editor.jsx
+│     │  └─ Editor.module.css
+│     ├─ login
+│     │  ├─ index.js
+│     │  └─ index.scss
+│     ├─ MyWork				&#x2F;&#x2F; 我的作品
+│     │  ├─ MyWork.jsx
+│     │  └─ MyWork.module.scss
+│     ├─ TemplateCentre		&#x2F;&#x2F; 模板中心
+│     │  ├─ TemplateCentre.jsx
+│     │  └─ TemplateCentre.module.scss
+│     └─ workmanager			&#x2F;&#x2F; 主页面
+│        ├─ WorkManager.jsx
+│        └─ WorkManager.module.scss<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Workmanager 涉及的文件为上方添加注释的所有文件</p>
+<h4 id="Bar-组件"><a href="#Bar-组件" class="headerlink" title="Bar 组件"></a>Bar 组件</h4><p><img src="https://s1.ax1x.com/2022/07/31/vF3Fw8.png" alt="MyTunTun" title="我的豚豚"></p>
+<pre class="line-numbers language-(javascript)" data-language="(javascript)"><code class="language-(javascript)">function Bar(props) &#123;
+  const &#123; click, content, active &#125; &#x3D; props;
+
+  return (
+    &lt;div
+      className&#x3D;&#123;!active ? style.bar : &#96;$&#123;style.bar&#125; $&#123;style.bar_active&#125;&#96;&#125;
+      onClick&#x3D;&#123;() &#x3D;&gt; click()&#125;
+    &gt;
+      &#123;content&#125;
+    &lt;&#x2F;div&gt;
+  );
+&#125;
+
+export default Bar;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>传入参数：click content acticve (后期会加上 src 或者其他功能)</p>
+<h4 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h4><pre class="line-numbers language-none"><code class="language-none">const NavigationBar &#x3D; () &#x3D;&gt; &#123;
+  const [barlist, setBarList] &#x3D; useState([
+    &#123;
+      content: &quot;Gitee&quot;,
+      active: false,
+    &#125;,
+    &#123;
+      content: &quot;Github&quot;,
+      active: false,
+      src: &quot;https:&#x2F;&#x2F;github.com&#x2F;8xbitDevs&#x2F;low-code-h5&quot;,
+    &#125;,
+  ]);
+
+  &#x2F;&#x2F; bar点击状态改变（单选）
+  const changeStateBar &#x3D; (clickIndex) &#x3D;&gt; &#123;
+    const newBarlist &#x3D; barlist.map((item, index) &#x3D;&gt; &#123;
+      if (clickIndex &#x3D;&#x3D;&#x3D; index) &#123;
+        return &#123;
+          ...item,
+          active: !item.active,
+        &#125;;
+      &#125; else &#123;
+        return &#123;
+          ...item,
+          active: false,
+        &#125;;
+      &#125;
+    &#125;);
+    setBarList(newBarlist);
+  &#125;;
+
+  return (
+    &lt;header className&#x3D;&#123;style.container&#125;&gt;
+      &lt;Link to&#x3D;&quot;&#x2F;&quot;&gt;
+        &lt;h3 className&#x3D;&#123;style.logo&#125;&gt;8xbitsDevs&lt;&#x2F;h3&gt;
+      &lt;&#x2F;Link&gt;
+      &lt;div className&#x3D;&#123;style.barLayout&#125;&gt;
+        &#123;barlist.map((item, index) &#x3D;&gt; &#123;
+          return (
+            &lt;Bar
+              key&#x3D;&#123;index&#125;
+              content&#x3D;&#123;item.content&#125;
+              active&#x3D;&#123;item.active&#125;
+              src &#x3D; &#123;item.src&#125;
+              click&#x3D;&#123;() &#x3D;&gt; &#123;
+                changeStateBar(index);
+              &#125;&#125;
+            &gt;&lt;&#x2F;Bar&gt;
+          );
+        &#125;)&#125;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;header&gt;
+  );
+&#125;;
+
+export default NavigationBar;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>根据 barlist 返回按键</p>
+<h4 id="左侧导航栏"><a href="#左侧导航栏" class="headerlink" title="左侧导航栏"></a>左侧导航栏</h4><p><img src="https://s1.ax1x.com/2022/07/31/vFtYss.png" alt="MyTunTun" title="我的豚豚"></p>
+<pre class="line-numbers language-none"><code class="language-none">function Sider() &#123;
+  const [secdis, setsecdis] &#x3D; useState([
+    &#123;
+      oc: false,
+    &#125;,
+    &#123;
+      oc: false,
+    &#125;,
+  ]);
+
+  &#x2F;&#x2F; 列表展开函数，参数：目标二级菜单在左右二级菜单中的顺序，从0开始
+  const OpenSec &#x3D; (secindex) &#x3D;&gt; &#123;
+    const newsecdis &#x3D; secdis.map((item, index) &#x3D;&gt; &#123;
+      if (secindex &#x3D;&#x3D;&#x3D; index) &#123;
+        return &#123;
+          oc: !secdis[index].oc,
+        &#125;;
+      &#125; else &#123;
+        return &#123;
+          ...item,
+        &#125;;
+      &#125;
+    &#125;);
+    setsecdis(newsecdis);
+  &#125;;
+
+  return (
+    &lt;div className&#x3D;&#123;style.container&#125;&gt;
+      &lt;Link to&#x3D;&#123;&#39;&#x2F;&#39;&#125; className&#x3D;&#123;style.text&#125;&gt;
+        &lt;span className&#x3D;&quot;iconfont icon-wode&quot;&gt;&lt;&#x2F;span&gt;
+        我的作品
+        &lt;div
+          className&#x3D;&#123;
+            !secdis[0].oc
+              ? style.handler
+              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
+          &#125;
+          style&#x3D;&#123;&#123; visibility: &quot;hidden&quot; &#125;&#125;
+        &gt;&lt;&#x2F;div&gt;
+      &lt;&#x2F;Link&gt;
+      &lt;div className&#x3D;&#123;style.text&#125; onClick&#x3D;&#123;() &#x3D;&gt; OpenSec(0)&#125;&gt;
+        &lt;span className&#x3D;&quot;iconfont icon-shujukanban&quot;&gt;&lt;&#x2F;span&gt;
+        数据中心
+        &lt;div
+          className&#x3D;&#123;
+            !secdis[0].oc
+              ? style.handler
+              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
+          &#125;
+        &gt;&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div
+        className&#x3D;&#123;!secdis[0].oc ? style.sec : &#96;$&#123;style.sec&#125; $&#123;style.sec_open&#125;&#96;&#125;
+      &gt;
+        &lt;div className&#x3D;&#123;style.text&#125;&gt;基础数据&lt;&#x2F;div&gt;
+        &lt;div className&#x3D;&#123;style.text&#125;&gt;基础数据2&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div className&#x3D;&#123;style.text&#125; onClick&#x3D;&#123;() &#x3D;&gt; OpenSec(1)&#125;&gt;
+        &lt;span className&#x3D;&quot;iconfont icon-mobankuangjia-xianxing&quot;&gt;&lt;&#x2F;span&gt;
+        模板中心
+        &lt;div
+          className&#x3D;&#123;
+            !secdis[1].oc
+              ? style.handler
+              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
+          &#125;
+        &gt;&lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div
+        className&#x3D;&#123;!secdis[1].oc ? style.sec : &#96;$&#123;style.sec&#125; $&#123;style.sec_open&#125;&#96;&#125;
+      &gt;
+        &lt;Link to&#x3D;&#123;&#39;&#x2F;template&#39;&#125; className&#x3D;&#123;style.text&#125;&gt;模板列表&lt;&#x2F;Link&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  );
+&#125;
+
+export default Sider;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>secdis 用来存放侧栏每个选项的打开状态，通过 opensec 来修改打开状态，并根据状态渲染菜单</p>
+<h4 id="模板中心选项卡"><a href="#模板中心选项卡" class="headerlink" title="模板中心选项卡"></a>模板中心选项卡</h4><p><img src="https://s1.ax1x.com/2022/07/31/vFtad0.png" alt="MyTunTun" title="我的豚豚"></p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 参数：img cardname description  date data(暂定)
+const TemplateCard &#x3D; (props) &#x3D;&gt; &#123;
+  const &#123; cardname, description, date &#125; &#x3D; props;
+  return (
+    &lt;div className&#x3D;&#123;style.container&#125;&gt;
+      &lt;div className&#x3D;&#123;style.img&#125;&gt;&lt;&#x2F;div&gt;
+      &lt;div className&#x3D;&#123;style.inf&#125;&gt;
+        &lt;p&gt;名称：&#123;cardname&#125;&lt;&#x2F;p&gt;
+        &lt;p&gt;描述：&#123;description&#125;&lt;&#x2F;p&gt;
+        &lt;p&gt;时间：&#123;date&#125;&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+      &lt;div className&#x3D;&#123;style.option&#125;&gt;
+        &lt;span title&#x3D;&quot;编辑&quot; className&#x3D;&quot;iconfont icon-tianjia&quot;&gt;&lt;&#x2F;span&gt;
+        &lt;span title&#x3D;&quot;预览&quot; className&#x3D;&quot;iconfont icon-preview&quot;&gt;&lt;&#x2F;span&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  );
+&#125;;
+
+export default TemplateCard;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>参数：img cardname description date(暂定)<br><strong>后面需要存储模板的具体 data，点击后根据 data 生成编辑页面，预览页面，并且需要通过向后端请求，得到数据后进行渲染</strong></p>
+<h4 id="我的作品选项卡"><a href="#我的作品选项卡" class="headerlink" title="我的作品选项卡"></a>我的作品选项卡</h4><p><img src="https://s1.ax1x.com/2022/07/31/vFtrz4.png" alt="MyTunTun" title="我的豚豚"></p>
+<pre class="line-numbers language-none"><code class="language-none">const WorksCard &#x3D; (props) &#x3D;&gt; &#123;
+  const &#123; cardname, description, date &#125; &#x3D; props;
+  return (
+    &lt;div className&#x3D;&#123;style.container&#125;&gt;
+      &lt;div className&#x3D;&#123;style.img&#125;&gt;&lt;&#x2F;div&gt;
+      &lt;div className&#x3D;&#123;style.inf&#125;&gt;
+        &lt;p&gt;名称：&#123;cardname&#125;&lt;&#x2F;p&gt;
+        &lt;p&gt;描述：&#123;description&#125;&lt;&#x2F;p&gt;
+        &lt;p&gt;时间：&#123;date&#125;&lt;&#x2F;p&gt;
+      &lt;&#x2F;div&gt;
+          &lt;div className&#x3D;&#123;style.option&#125;&gt;
+              &lt;span title&#x3D;&quot;编辑&quot; className&#x3D;&#39;iconfont icon-bianjishuru-xianxing&#39;&gt;&lt;&#x2F;span&gt;
+              &lt;span title&#x3D;&quot;预览&quot; className&#x3D;&#39;iconfont icon-preview&#39;&gt;&lt;&#x2F;span&gt;
+              &lt;span title&#x3D;&quot;删除&quot; className&#x3D;&quot;iconfont icon-shanchu&quot;&gt;&lt;&#x2F;span&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  );
+&#125;;
+
+export default WorksCard;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>需求与模板中心选项卡类似</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">const WorkManager &#x3D; () &#x3D;&gt; &#123;
+  return (
+    &lt;div className&#x3D;&#123;style.container&#125;&gt;
+      &lt;NavigationBar&gt;&lt;&#x2F;NavigationBar&gt;
+      &lt;div className&#x3D;&#123;style.down&#125;&gt;
+        &lt;Sider&gt;&lt;&#x2F;Sider&gt;
+        &lt;div className&#x3D;&#123;style.wpcontainer&#125;&gt;
+          &#123;&#x2F;* &lt;MyWork&gt;&lt;&#x2F;MyWork&gt; *&#x2F;&#125;
+          &lt;Outlet&gt;&lt;&#x2F;Outlet&gt;
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+  );
+&#125;;
+
+export default WorkManager;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这边没啥好说的</p>
+<p><strong>此外，还需要制作一个数据中心的组建，展示在数据中心当中，具体形式可参照鲁班 H5</strong></p>
+]]></content>
+  </entry>
+  <entry>
     <title>TCP和UDP</title>
     <url>/2022/06/13/TCP%E5%92%8CUDP/</url>
     <content><![CDATA[<h3 id="TCP和UDP"><a href="#TCP和UDP" class="headerlink" title="TCP和UDP"></a>TCP和UDP</h3><h4 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h4><ul>
@@ -46,6 +339,29 @@
       <tags>
         <tag>计网</tag>
         <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>哈喽！你好！！</title>
+    <url>/2022/04/03/hello-world/</url>
+    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
+<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
+<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
+<hr>
+<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
+<hr>
+<h3 id="2022-04-11"><a href="#2022-04-11" class="headerlink" title="2022/04/11"></a>2022/04/11</h3><p>花了一周。。终于把JS啃完了，尝试着刷了几道力扣。目前只是过了一遍主要知识，实际上手较少，等到学完es6,ajax，开始上手react之后，开始着手具体项目。网课讲的JS还是太基础，朋友推荐了两本书，《JavaScript高级程序设计》、《你不知道的JavaScript》，希望能够以此更全面了解JavaScript，学习更加底层的知识。</p>
+<hr>
+<h3 id="2022-04-13"><a href="#2022-04-13" class="headerlink" title="2022/04/13"></a>2022/04/13</h3><p>es6结束。</p>
+<hr>
+<h3 id="2022-04-15"><a href="#2022-04-15" class="headerlink" title="2022/04/15"></a>2022/04/15</h3><p>AJAX结束，开始步入react，以及项目实战。</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>自我介绍</tag>
+        <tag>学习进度</tag>
       </tags>
   </entry>
   <entry>
@@ -190,29 +506,6 @@ title可省略
       </tags>
   </entry>
   <entry>
-    <title>哈喽！你好！！</title>
-    <url>/2022/04/03/hello-world/</url>
-    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
-<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
-<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
-<hr>
-<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
-<hr>
-<h3 id="2022-04-11"><a href="#2022-04-11" class="headerlink" title="2022/04/11"></a>2022/04/11</h3><p>花了一周。。终于把JS啃完了，尝试着刷了几道力扣。目前只是过了一遍主要知识，实际上手较少，等到学完es6,ajax，开始上手react之后，开始着手具体项目。网课讲的JS还是太基础，朋友推荐了两本书，《JavaScript高级程序设计》、《你不知道的JavaScript》，希望能够以此更全面了解JavaScript，学习更加底层的知识。</p>
-<hr>
-<h3 id="2022-04-13"><a href="#2022-04-13" class="headerlink" title="2022/04/13"></a>2022/04/13</h3><p>es6结束。</p>
-<hr>
-<h3 id="2022-04-15"><a href="#2022-04-15" class="headerlink" title="2022/04/15"></a>2022/04/15</h3><p>AJAX结束，开始步入react，以及项目实战。</p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>自我介绍</tag>
-        <tag>学习进度</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>协同算法之OT和CRDT</title>
     <url>/2022/07/07/ot%E5%92%8Ccrdt/</url>
     <content><![CDATA[<h3 id="多人协同编辑"><a href="#多人协同编辑" class="headerlink" title="多人协同编辑"></a>多人协同编辑</h3><p>多人协同编辑，就是像腾讯文档等在线产品一样，可以两人及以上同时编辑一个文件，而双方的编辑操作互不干扰，能够自动解决冲突。<br>而目前，协同编辑的基本实现思路主要有两种</p>
@@ -229,59 +522,6 @@ title可省略
       <tags>
         <tag>多人协同</tag>
         <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>两数之和-年轻人的第一道力扣</title>
-    <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
-<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
-<p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
-</blockquote>
-<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class="line-numbers language-none"><code class="language-none">输入：nums &#x3D; [2,7,11,15], target &#x3D; 9
-输出：[0,1]
-解释：因为 nums[0] + nums[1] &#x3D;&#x3D; 9 ，返回 [0, 1] 。
-
-来源：力扣（LeetCode）
-链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;two-sum
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="开始解题"><a href="#开始解题" class="headerlink" title="开始解题"></a>开始解题</h3><h5 id="自己的思考"><a href="#自己的思考" class="headerlink" title="自己的思考"></a>自己的思考</h5><p>由于没有什么算法基础，看到题目首先自然而然想到的就是暴力求解😂。通过两次循环，先从头选定数组的第一个元素，然后遍历剩下的元素，如果找到和等于target的就输出，否则进入下一次循环。<br>代码如下</p>
-<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var twoSum &#x3D; function(nums, target) &#123;
-    
-    for(var i &#x3D; 0;i&lt;nums.length;i++)&#123;
-        for(var j&#x3D;i+1;j&lt;nums.length;j++)
-            if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;
-                return [i,j];
-                break
-            &#125;
-        &#125;
-        
-    &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>当然，效果就很拉跨。<br><img src="https://s1.ax1x.com/2022/04/09/LFGpmd.png" alt="结果" title="执行结果"></p>
-<h5 id="交流学习"><a href="#交流学习" class="headerlink" title="交流学习"></a>交流学习</h5><p>自己用笨办法求解完之后，查看了官方的解法————利用哈希表。</p>
-<h6 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h6><p>运用暴力法寻找和等于target的目标的复杂度太高，由于有两次循环，因此时间复杂度为$O(N^2)$。而运用哈希表，可以将时间复杂度从$O(N^2)$降低到$O(1)$。</p>
-<p>原理就是，我们遍历到数字 x 时，用 target 减去 x，就会得到 y，若 y 存在于哈希表中，我们就可以直接返回结果了。若 y 不存在，那么我们需要将 x 存入哈希表，好让后续遍历的数字使用。<br>代码如下</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">const</span> d <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
-        <span class="token punctuation">&#125;</span>
-        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>最终提交后，执行用时果然快了不少</p>
-<p><img src="https://s1.ax1x.com/2022/04/10/LF0C7D.png" alt="结果"></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>力扣</tag>
-        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -362,6 +602,59 @@ title可省略
       </tags>
   </entry>
   <entry>
+    <title>两数之和-年轻人的第一道力扣</title>
+    <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
+<p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
+</blockquote>
+<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class="line-numbers language-none"><code class="language-none">输入：nums &#x3D; [2,7,11,15], target &#x3D; 9
+输出：[0,1]
+解释：因为 nums[0] + nums[1] &#x3D;&#x3D; 9 ，返回 [0, 1] 。
+
+来源：力扣（LeetCode）
+链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;two-sum
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="开始解题"><a href="#开始解题" class="headerlink" title="开始解题"></a>开始解题</h3><h5 id="自己的思考"><a href="#自己的思考" class="headerlink" title="自己的思考"></a>自己的思考</h5><p>由于没有什么算法基础，看到题目首先自然而然想到的就是暴力求解😂。通过两次循环，先从头选定数组的第一个元素，然后遍历剩下的元素，如果找到和等于target的就输出，否则进入下一次循环。<br>代码如下</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var twoSum &#x3D; function(nums, target) &#123;
+    
+    for(var i &#x3D; 0;i&lt;nums.length;i++)&#123;
+        for(var j&#x3D;i+1;j&lt;nums.length;j++)
+            if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;
+                return [i,j];
+                break
+            &#125;
+        &#125;
+        
+    &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当然，效果就很拉跨。<br><img src="https://s1.ax1x.com/2022/04/09/LFGpmd.png" alt="结果" title="执行结果"></p>
+<h5 id="交流学习"><a href="#交流学习" class="headerlink" title="交流学习"></a>交流学习</h5><p>自己用笨办法求解完之后，查看了官方的解法————利用哈希表。</p>
+<h6 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h6><p>运用暴力法寻找和等于target的目标的复杂度太高，由于有两次循环，因此时间复杂度为$O(N^2)$。而运用哈希表，可以将时间复杂度从$O(N^2)$降低到$O(1)$。</p>
+<p>原理就是，我们遍历到数字 x 时，用 target 减去 x，就会得到 y，若 y 存在于哈希表中，我们就可以直接返回结果了。若 y 不存在，那么我们需要将 x 存入哈希表，好让后续遍历的数字使用。<br>代码如下</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">const</span> d <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
+        <span class="token punctuation">&#125;</span>
+        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>最终提交后，执行用时果然快了不少</p>
+<p><img src="https://s1.ax1x.com/2022/04/10/LF0C7D.png" alt="结果"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>JavaScript</tag>
+        <tag>力扣</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>浅谈受控组件</title>
     <url>/2022/04/17/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6/</url>
     <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>跟着网课学习react的过程中，在做评论区模块的过程中，遇到这样一串代码。</p>
@@ -414,237 +707,6 @@ title可省略
       </categories>
       <tags>
         <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>项目概况</title>
-    <url>/2022/07/31/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<pre class="line-numbers language-none"><code class="language-none">├─ src
-│  ├─ App.jsx
-│  ├─ App.scss
-│  ├─ components
-│  │  ├─ AttributesPanel
-│  │  │  ├─ AttributesPanel.jsx
-│  │  │  └─ AttributesPanel.module.css
-│  │  ├─ ComponentItem
-│  │  │  ├─ ComponentItem.jsx
-│  │  │  └─ ComponentItem.module.css
-│  │  ├─ Designer
-│  │  │  ├─ Designer.jsx
-│  │  │  └─ Designer.module.css
-│  │  ├─ EditorNav
-│  │  │  ├─ Bar
-│  │  │  │  ├─ Bar.jsx
-│  │  │  │  └─ Bar.module.scss
-│  │  │  ├─ EditorNav.jsx
-│  │  │  └─ EditorNav.module.scss
-│  │  ├─ NavigationBar		&#x2F;&#x2F; 顶部导航栏(上方EditorNav为Editor的导航栏)
-│  │  │  ├─ Bar			&#x2F;&#x2F; 导航栏选项
-│  │  │  │  ├─ Bar.jsx
-│  │  │  │  └─ Bar.module.scss
-│  │  │  ├─ NavigationBar.jsx
-│  │  │  └─ NavigationBar.module.scss
-│  │  ├─ Sider				&#x2F;&#x2F; 左侧菜单
-│  │  │  ├─ Sider.jsx
-│  │  │  └─ Sider.module.scss
-│  │  ├─ TemplateCard		&#x2F;&#x2F; 模板中心选项卡
-│  │  │  ├─ TemplateCard.jsx
-│  │  │  └─ TemplateCard.module.scss
-│  │  └─ WorksCard			&#x2F;&#x2F; 作品选项卡
-│  │     ├─ WorksCard.jsx
-│  │     └─ WorksCard.module.scss
-│  ├─ favicon.svg
-│  ├─ index.scss
-│  ├─ logo.svg
-│  ├─ main.jsx
-│  ├─ media
-│  │  └─ icon				&#x2F;&#x2F; 存放各类图标，来源为iconfont
-│  │     ├─ demo.css
-│  │     ├─ demo_index.html
-│  │     ├─ iconfont.css
-│  │     ├─ iconfont.js
-│  │     ├─ iconfont.json
-│  │     ├─ iconfont.ttf
-│  │     ├─ iconfont.woff
-│  │     ├─ iconfont.woff2
-│  │     └─ tianjia.svg
-│  └─ pages
-│     ├─ Editor
-│     │  ├─ Editor.jsx
-│     │  └─ Editor.module.css
-│     ├─ login
-│     │  ├─ index.js
-│     │  └─ index.scss
-│     ├─ MyWork				&#x2F;&#x2F; 我的作品
-│     │  ├─ MyWork.jsx
-│     │  └─ MyWork.module.scss
-│     ├─ TemplateCentre		&#x2F;&#x2F; 模板中心
-│     │  ├─ TemplateCentre.jsx
-│     │  └─ TemplateCentre.module.scss
-│     └─ workmanager			&#x2F;&#x2F; 主页面
-│        ├─ WorkManager.jsx
-│        └─ WorkManager.module.scss<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Workmanager 涉及的文件为上方添加注释的所有文件</p>
-<h4 id="Bar-组件"><a href="#Bar-组件" class="headerlink" title="Bar 组件"></a>Bar 组件</h4><p><img src="https://s1.ax1x.com/2022/07/31/vF3Fw8.png" alt="MyTunTun" title="我的豚豚"></p>
-<pre class="line-numbers language-(javascript)" data-language="(javascript)"><code class="language-(javascript)">function Bar(props) &#123;
-  const &#123; click, content, active &#125; &#x3D; props;
-
-  return (
-    &lt;div
-      className&#x3D;&#123;!active ? style.bar : &#96;$&#123;style.bar&#125; $&#123;style.bar_active&#125;&#96;&#125;
-      onClick&#x3D;&#123;() &#x3D;&gt; click()&#125;
-    &gt;
-      &#123;content&#125;
-    &lt;&#x2F;div&gt;
-  );
-&#125;
-
-export default Bar;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>传入参数：click content acticve (后期会加上 src 或者其他功能)</p>
-<h4 id="顶部导航栏"><a href="#顶部导航栏" class="headerlink" title="顶部导航栏"></a>顶部导航栏</h4><pre class="line-numbers language-none"><code class="language-none">const NavigationBar &#x3D; () &#x3D;&gt; &#123;
-  const [barlist, setBarList] &#x3D; useState([
-    &#123;
-      content: &quot;Gitee&quot;,
-      active: false,
-    &#125;,
-    &#123;
-      content: &quot;Github&quot;,
-      active: false,
-      src: &quot;https:&#x2F;&#x2F;github.com&#x2F;8xbitDevs&#x2F;low-code-h5&quot;,
-    &#125;,
-  ]);
-
-  &#x2F;&#x2F; bar点击状态改变（单选）
-  const changeStateBar &#x3D; (clickIndex) &#x3D;&gt; &#123;
-    const newBarlist &#x3D; barlist.map((item, index) &#x3D;&gt; &#123;
-      if (clickIndex &#x3D;&#x3D;&#x3D; index) &#123;
-        return &#123;
-          ...item,
-          active: !item.active,
-        &#125;;
-      &#125; else &#123;
-        return &#123;
-          ...item,
-          active: false,
-        &#125;;
-      &#125;
-    &#125;);
-    setBarList(newBarlist);
-  &#125;;
-
-  return (
-    &lt;header className&#x3D;&#123;style.container&#125;&gt;
-      &lt;Link to&#x3D;&quot;&#x2F;&quot;&gt;
-        &lt;h3 className&#x3D;&#123;style.logo&#125;&gt;8xbitsDevs&lt;&#x2F;h3&gt;
-      &lt;&#x2F;Link&gt;
-      &lt;div className&#x3D;&#123;style.barLayout&#125;&gt;
-        &#123;barlist.map((item, index) &#x3D;&gt; &#123;
-          return (
-            &lt;Bar
-              key&#x3D;&#123;index&#125;
-              content&#x3D;&#123;item.content&#125;
-              active&#x3D;&#123;item.active&#125;
-              src &#x3D; &#123;item.src&#125;
-              click&#x3D;&#123;() &#x3D;&gt; &#123;
-                changeStateBar(index);
-              &#125;&#125;
-            &gt;&lt;&#x2F;Bar&gt;
-          );
-        &#125;)&#125;
-      &lt;&#x2F;div&gt;
-    &lt;&#x2F;header&gt;
-  );
-&#125;;
-
-export default NavigationBar;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>根据 barlist 返回按键</p>
-<h4 id="左侧导航栏"><a href="#左侧导航栏" class="headerlink" title="左侧导航栏"></a>左侧导航栏</h4><pre class="line-numbers language-none"><code class="language-none">function SideBar() &#123;
-  const [secdis, setsecdis] &#x3D; useState([
-    &#123;
-      oc: false,
-    &#125;,
-    &#123;
-      oc: false,
-    &#125;,
-  ]);
-
-  &#x2F;&#x2F; 列表展开函数，参数：目标二级菜单在左右二级菜单中的顺序，从0开始
-  const OpenSec &#x3D; (secindex) &#x3D;&gt; &#123;
-    const newsecdis &#x3D; secdis.map((item, index) &#x3D;&gt; &#123;
-      if (secindex &#x3D;&#x3D;&#x3D; index) &#123;
-        return &#123;
-          oc: !secdis[index].oc,
-        &#125;;
-      &#125; else &#123;
-        return &#123;
-          ...item,
-        &#125;;
-      &#125;
-    &#125;);
-    setsecdis(newsecdis);
-  &#125;;
-
-  return (
-    &lt;div className&#x3D;&#123;style.container&#125;&gt;
-      &lt;Link to&#x3D;&#123;&#39;&#x2F;&#39;&#125; className&#x3D;&#123;style.text&#125;&gt;
-        &lt;span className&#x3D;&quot;iconfont icon-wode&quot;&gt;&lt;&#x2F;span&gt;
-        我的作品
-        &lt;div
-          className&#x3D;&#123;
-            !secdis[0].oc
-              ? style.handler
-              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
-          &#125;
-          style&#x3D;&#123;&#123; visibility: &quot;hidden&quot; &#125;&#125;
-        &gt;&lt;&#x2F;div&gt;
-      &lt;&#x2F;Link&gt;
-      &lt;div className&#x3D;&#123;style.text&#125; onClick&#x3D;&#123;() &#x3D;&gt; OpenSec(0)&#125;&gt;
-        &lt;span className&#x3D;&quot;iconfont icon-shujukanban&quot;&gt;&lt;&#x2F;span&gt;
-        数据中心
-        &lt;div
-          className&#x3D;&#123;
-            !secdis[0].oc
-              ? style.handler
-              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
-          &#125;
-        &gt;&lt;&#x2F;div&gt;
-      &lt;&#x2F;div&gt;
-      &lt;div
-        className&#x3D;&#123;!secdis[0].oc ? style.sec : &#96;$&#123;style.sec&#125; $&#123;style.sec_open&#125;&#96;&#125;
-      &gt;
-        &lt;div className&#x3D;&#123;style.text&#125;&gt;基础数据&lt;&#x2F;div&gt;
-        &lt;div className&#x3D;&#123;style.text&#125;&gt;基础数据2&lt;&#x2F;div&gt;
-      &lt;&#x2F;div&gt;
-      &lt;div className&#x3D;&#123;style.text&#125; onClick&#x3D;&#123;() &#x3D;&gt; OpenSec(1)&#125;&gt;
-        &lt;span className&#x3D;&quot;iconfont icon-mobankuangjia-xianxing&quot;&gt;&lt;&#x2F;span&gt;
-        模板中心
-        &lt;div
-          className&#x3D;&#123;
-            !secdis[1].oc
-              ? style.handler
-              : &#96;$&#123;style.handler&#125; $&#123;style.handler_open&#125;&#96;
-          &#125;
-        &gt;&lt;&#x2F;div&gt;
-      &lt;&#x2F;div&gt;
-      &lt;div
-        className&#x3D;&#123;!secdis[1].oc ? style.sec : &#96;$&#123;style.sec&#125; $&#123;style.sec_open&#125;&#96;&#125;
-      &gt;
-        &lt;Link to&#x3D;&#123;&#39;&#x2F;template&#39;&#125; className&#x3D;&#123;style.text&#125;&gt;模板列表&lt;&#x2F;Link&gt;
-      &lt;&#x2F;div&gt;
-    &lt;&#x2F;div&gt;
-  );
-&#125;
-
-export default SideBar;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>项目</tag>
       </tags>
   </entry>
   <entry>
