@@ -174,13 +174,6 @@
   </url>
   
   <url>
-    <loc>https://wztuntun.github.io/tags/JavaScript/</loc>
-    <lastmod>2022-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wztuntun.github.io/tags/markdown/</loc>
     <lastmod>2022-07-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -202,14 +195,21 @@
   </url>
   
   <url>
-    <loc>https://wztuntun.github.io/tags/React/</loc>
+    <loc>https://wztuntun.github.io/tags/%E5%8A%9B%E6%89%A3/</loc>
     <lastmod>2022-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wztuntun.github.io/tags/%E5%8A%9B%E6%89%A3/</loc>
+    <loc>https://wztuntun.github.io/tags/JavaScript/</loc>
+    <lastmod>2022-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wztuntun.github.io/tags/React/</loc>
     <lastmod>2022-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
