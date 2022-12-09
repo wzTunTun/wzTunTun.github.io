@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TCP和UDP, 无 证 豚 豚">
+    <meta name="keywords" content="模块化, 无 证 豚 豚">
     <meta name="description" content="Tunlog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>TCP和UDP | 无 证 豚 豚</title>
+    <title>模块化 | 无 证 豚 豚</title>
     <link rel="icon" type="image/png" href="/icon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -233,12 +233,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">TCP和UDP</h1>
+                    <h1 class="description center-align post-title">模块化</h1>
                 </div>
             </div>
         </div>
@@ -354,12 +354,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AE%A1%E7%BD%91/">
-                                <span class="chip bg-color">计网</span>
-                            </a>
-                        
-                            <a href="/tags/%E9%9D%A2%E8%AF%95/">
-                                <span class="chip bg-color">面试</span>
+                            <a href="/tags/ES6/">
+                                <span class="chip bg-color">ES6</span>
                             </a>
                         
                     </div>
@@ -383,7 +379,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-13
+                    2022-06-04
                 </div>
                 
 
@@ -407,85 +403,53 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="计网知识点"><a href="#计网知识点" class="headerlink" title="计网知识点"></a>计网知识点</h3><h4 id="1-HTTP常用请求方式以及用途"><a href="#1-HTTP常用请求方式以及用途" class="headerlink" title="1.HTTP常用请求方式以及用途"></a>1.HTTP常用请求方式以及用途</h4><table>
-<thead>
-<tr>
-<th>名称</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>GET</td>
-<td>发送请求，获取服务器数据</td>
-</tr>
-<tr>
-<td>POST</td>
-<td>向URL指定的资源提交数据</td>
-</tr>
-<tr>
-<td>PUT</td>
-<td>向服务器提交数据，以修改数据</td>
-</tr>
-<tr>
-<td>HEAD</td>
-<td>请求页面的首部，获取资源的元信息</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td>删除服务器上的某些资源</td>
-</tr>
-<tr>
-<td>CONNECT</td>
-<td>建立连接隧道，用于代理服务器</td>
-</tr>
-<tr>
-<td>OPTIONS</td>
-<td>列出可对资源实行的请求方法，常用于跨域</td>
-</tr>
-<tr>
-<td>TRACE</td>
-<td>追踪请求-响应的传输路径</td>
-</tr>
-</tbody></table>
-<h4 id="2-常用状态码及其含义"><a href="#2-常用状态码及其含义" class="headerlink" title="2.常用状态码及其含义"></a>2.常用状态码及其含义</h4><table>
-<thead>
-<tr>
-<th>状态码</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1xx</td>
-<td>接受的请求正在处理</td>
-</tr>
-<tr>
-<td>2xx</td>
-<td>请求正常处理完毕</td>
-</tr>
-<tr>
-<td>3xx</td>
-<td>重定向状态，需要重新请求</td>
-</tr>
-<tr>
-<td>4xx</td>
-<td>服务器无法处理请求</td>
-</tr>
-<tr>
-<td>5xx</td>
-<td>服务器处理请求出错</td>
-</tr>
-</tbody></table>
+                <h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><blockquote>
+<p>模块化是指将一个大的程序文件，拆分成许多小的文件，然后将小文件组合起来</p>
+</blockquote>
+<p>模块化功能主要由两个命令构成：<code>export</code>和<code>import</code></p>
 <ul>
-<li>101 切换请求协议，从 HTTP 切换到 WebSocket</li>
-<li>200 请求成功，表示正常返回信息。</li>
-<li>301 永久重定向，会缓存</li>
-<li>302 临时重定向，不会缓存</li>
-<li>400 请求错误</li>
-<li>403 服务器禁止访问</li>
-<li>404 找不到与 URI 相匹配的资源。</li>
-<li>500 常见的服务器端错误</li>
+<li>export用于规定模块的对外接口</li>
+<li>import用于输入其他模块提供的功能</li>
 </ul>
+<h3 id="模块化的好处"><a href="#模块化的好处" class="headerlink" title="模块化的好处"></a>模块化的好处</h3><ol>
+<li>防止命名冲突</li>
+<li>代码复用</li>
+<li>高维护性</li>
+</ol>
+<h3 id="模块暴露数据语法"><a href="#模块暴露数据语法" class="headerlink" title="模块暴露数据语法"></a>模块暴露数据语法</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">export let school &#x3D; &#39;123&#39;
+export function()&#123;
+    console.log(&#39;我们可以教给你开发技能&#39;)
+&#125;
 
+&#x2F;&#x2F;统一暴露
+let school &#x3D; &#39;123&#39;
+findJob()&#123;
+    console.log(&#39;我们可以帮助你&#39;)
+&#125;
+export &#123;school, findJob&#125;
+&#x2F;&#x2F;引入模块
+import * as m2 from &#39;.&#x2F;src&#x2F;js&#x2F;m2.js&#39;
+
+&#x2F;&#x2F;默认暴露
+export default&#123;
+    school:&#39;atg&#39;,
+    change: function()&#123;
+        console.log(&#39;我么可以&#39;)
+    &#125;
+&#125;
+&#x2F;&#x2F;引入
+import * as m3 from &#39;.&#x2F;src&#x2F;js&#x2F;m3.js&#39;
+&#x2F;&#x2F;用change方法
+m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="模块引入数据语法汇总"><a href="#模块引入数据语法汇总" class="headerlink" title="模块引入数据语法汇总"></a>模块引入数据语法汇总</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//1.通用的导入方式</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> m1 <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
+
+<span class="token comment">//2.解构赋值形式</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span>school<span class="token punctuation">,</span>teach<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span><span class="token keyword">default</span> <span class="token operator">*</span> <span class="token keyword">as</span> m3<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span>
+
+<span class="token comment">//3.简便形式  针对默认暴露</span>
+<span class="token keyword">import</span> m3 <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -511,7 +475,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wztuntun.github.io/2022/06/13/%E8%AE%A1%E7%BD%91%E7%9F%A5%E8%AF%86%E7%82%B9/">https://wztuntun.github.io/2022/06/13/%E8%AE%A1%E7%BD%91%E7%9F%A5%E8%AF%86%E7%82%B9/</a>
+                    <a href="https://wztuntun.github.io/2022/06/04/%E6%A8%A1%E5%9D%97%E5%8C%96/">https://wztuntun.github.io/2022/06/04/%E6%A8%A1%E5%9D%97%E5%8C%96/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -549,12 +513,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AE%A1%E7%BD%91/">
-                                    <span class="chip bg-color">计网</span>
-                                </a>
-                            
-                                <a href="/tags/%E9%9D%A2%E8%AF%95/">
-                                    <span class="chip bg-color">面试</span>
+                                <a href="/tags/ES6/">
+                                    <span class="chip bg-color">ES6</span>
                                 </a>
                             
                         </div>

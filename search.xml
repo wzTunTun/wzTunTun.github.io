@@ -290,6 +290,25 @@ title可省略
       </tags>
   </entry>
   <entry>
+    <title>协同算法之OT和CRDT</title>
+    <url>/2022/07/07/ot%E5%92%8Ccrdt/</url>
+    <content><![CDATA[<h3 id="多人协同编辑"><a href="#多人协同编辑" class="headerlink" title="多人协同编辑"></a>多人协同编辑</h3><p>多人协同编辑，就是像腾讯文档等在线产品一样，可以两人及以上同时编辑一个文件，而双方的编辑操作互不干扰，能够自动解决冲突。<br>而目前，协同编辑的基本实现思路主要有两种</p>
+<ul>
+<li>CRDT</li>
+<li>OT<h4 id="CRDT"><a href="#CRDT" class="headerlink" title="CRDT"></a>CRDT</h4>CRDT即为无冲突可复制数据类型，是一些分布式系统中适应于不同场景且可以保持最终以执行的数据结构统称。CRDT本身只是一个概念，需要自行实现数据结构。<h5 id="CRDT的类型"><a href="#CRDT的类型" class="headerlink" title="CRDT的类型"></a>CRDT的类型</h5></li>
+<li>基于操作状态的CRDT</li>
+<li>基于状态的CRDT<br>这两种CRDT在数学上是等价的，可以相互装换。基于操作的CRDT需要消息中间件提供额外的支持，对操作命名并保证通信过程中不会丢失或者交递信息时保证消息唯一。基于状态的消息中间件则需要通信时保证全部的状态完好的交递。<h5 id="基于操作的CRDT"><a href="#基于操作的CRDT" class="headerlink" title="基于操作的CRDT"></a>基于操作的CRDT</h5>基于操作的CRDT又称CMCRDT，CMCRDT在传播时，只包含数据更新操作信息。比方说，一个整数在执行了(+10), (-20) 操作后，CmRDT 广播时则只包含关于这个整数进行了(+10), (-20) 操作。其他的 DC 收到这个 CmRDT 后会在本地对相应的数据执行 CmRDT 中包含的操作。CmRDT 所能携带的操作必须是可交换的，通信模块必须保证所有 CmRDT 包都能被正确交递，但是顺序无需保证。<h5 id="基于状态的CRDT"><a href="#基于状态的CRDT" class="headerlink" title="基于状态的CRDT"></a>基于状态的CRDT</h5>基于状态的 CRDTs又称为CvRDTs。CvRDTs 会将本地全部的数据状态传播给其他 DC, 这些状态在接受到后会被一个函数做 merge 处理，所以这些状态必须是可交换的，关联的，幂等的。merge 函数会为在 CvRDT 之间提供一个 join 操作，将接收到 CvRDT 与本地数据合并。<h4 id="OT"><a href="#OT" class="headerlink" title="OT"></a>OT</h4>OT即为操作转换，是指对文档编辑以及同时编辑冲突解决的一类技术，且依赖服务器来保持最终一致性。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>多人协同</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>两数之和-年轻人的第一道力扣</title>
     <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
@@ -338,27 +357,8 @@ title可省略
       </categories>
       <tags>
         <tag>JavaScript</tag>
+        <tag>算法</tag>
         <tag>力扣</tag>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>协同算法之OT和CRDT</title>
-    <url>/2022/07/07/ot%E5%92%8Ccrdt/</url>
-    <content><![CDATA[<h3 id="多人协同编辑"><a href="#多人协同编辑" class="headerlink" title="多人协同编辑"></a>多人协同编辑</h3><p>多人协同编辑，就是像腾讯文档等在线产品一样，可以两人及以上同时编辑一个文件，而双方的编辑操作互不干扰，能够自动解决冲突。<br>而目前，协同编辑的基本实现思路主要有两种</p>
-<ul>
-<li>CRDT</li>
-<li>OT<h4 id="CRDT"><a href="#CRDT" class="headerlink" title="CRDT"></a>CRDT</h4>CRDT即为无冲突可复制数据类型，是一些分布式系统中适应于不同场景且可以保持最终以执行的数据结构统称。CRDT本身只是一个概念，需要自行实现数据结构。<h5 id="CRDT的类型"><a href="#CRDT的类型" class="headerlink" title="CRDT的类型"></a>CRDT的类型</h5></li>
-<li>基于操作状态的CRDT</li>
-<li>基于状态的CRDT<br>这两种CRDT在数学上是等价的，可以相互装换。基于操作的CRDT需要消息中间件提供额外的支持，对操作命名并保证通信过程中不会丢失或者交递信息时保证消息唯一。基于状态的消息中间件则需要通信时保证全部的状态完好的交递。<h5 id="基于操作的CRDT"><a href="#基于操作的CRDT" class="headerlink" title="基于操作的CRDT"></a>基于操作的CRDT</h5>基于操作的CRDT又称CMCRDT，CMCRDT在传播时，只包含数据更新操作信息。比方说，一个整数在执行了(+10), (-20) 操作后，CmRDT 广播时则只包含关于这个整数进行了(+10), (-20) 操作。其他的 DC 收到这个 CmRDT 后会在本地对相应的数据执行 CmRDT 中包含的操作。CmRDT 所能携带的操作必须是可交换的，通信模块必须保证所有 CmRDT 包都能被正确交递，但是顺序无需保证。<h5 id="基于状态的CRDT"><a href="#基于状态的CRDT" class="headerlink" title="基于状态的CRDT"></a>基于状态的CRDT</h5>基于状态的 CRDTs又称为CvRDTs。CvRDTs 会将本地全部的数据状态传播给其他 DC, 这些状态在接受到后会被一个函数做 merge 处理，所以这些状态必须是可交换的，关联的，幂等的。merge 函数会为在 CvRDT 之间提供一个 join 操作，将接收到 CvRDT 与本地数据合并。<h4 id="OT"><a href="#OT" class="headerlink" title="OT"></a>OT</h4>OT即为操作转换，是指对文档编辑以及同时编辑冲突解决的一类技术，且依赖服务器来保持最终一致性。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>多人协同</tag>
       </tags>
   </entry>
   <entry>
@@ -397,93 +397,60 @@ title可省略
       </tags>
   </entry>
   <entry>
-    <title>TCP和UDP</title>
-    <url>/2022/06/13/%E8%AE%A1%E7%BD%91%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
-    <content><![CDATA[<h3 id="计网知识点"><a href="#计网知识点" class="headerlink" title="计网知识点"></a>计网知识点</h3><h4 id="1-HTTP常用请求方式以及用途"><a href="#1-HTTP常用请求方式以及用途" class="headerlink" title="1.HTTP常用请求方式以及用途"></a>1.HTTP常用请求方式以及用途</h4><table>
-<thead>
-<tr>
-<th>名称</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>GET</td>
-<td>发送请求，获取服务器数据</td>
-</tr>
-<tr>
-<td>POST</td>
-<td>向URL指定的资源提交数据</td>
-</tr>
-<tr>
-<td>PUT</td>
-<td>向服务器提交数据，以修改数据</td>
-</tr>
-<tr>
-<td>HEAD</td>
-<td>请求页面的首部，获取资源的元信息</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td>删除服务器上的某些资源</td>
-</tr>
-<tr>
-<td>CONNECT</td>
-<td>建立连接隧道，用于代理服务器</td>
-</tr>
-<tr>
-<td>OPTIONS</td>
-<td>列出可对资源实行的请求方法，常用于跨域</td>
-</tr>
-<tr>
-<td>TRACE</td>
-<td>追踪请求-响应的传输路径</td>
-</tr>
-</tbody></table>
-<h4 id="2-常用状态码及其含义"><a href="#2-常用状态码及其含义" class="headerlink" title="2.常用状态码及其含义"></a>2.常用状态码及其含义</h4><table>
-<thead>
-<tr>
-<th>状态码</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1xx</td>
-<td>接受的请求正在处理</td>
-</tr>
-<tr>
-<td>2xx</td>
-<td>请求正常处理完毕</td>
-</tr>
-<tr>
-<td>3xx</td>
-<td>重定向状态，需要重新请求</td>
-</tr>
-<tr>
-<td>4xx</td>
-<td>服务器无法处理请求</td>
-</tr>
-<tr>
-<td>5xx</td>
-<td>服务器处理请求出错</td>
-</tr>
-</tbody></table>
+    <title>模块化</title>
+    <url>/2022/06/04/%E6%A8%A1%E5%9D%97%E5%8C%96/</url>
+    <content><![CDATA[<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><blockquote>
+<p>模块化是指将一个大的程序文件，拆分成许多小的文件，然后将小文件组合起来</p>
+</blockquote>
+<p>模块化功能主要由两个命令构成：<code>export</code>和<code>import</code></p>
 <ul>
-<li>101 切换请求协议，从 HTTP 切换到 WebSocket</li>
-<li>200 请求成功，表示正常返回信息。</li>
-<li>301 永久重定向，会缓存</li>
-<li>302 临时重定向，不会缓存</li>
-<li>400 请求错误</li>
-<li>403 服务器禁止访问</li>
-<li>404 找不到与 URI 相匹配的资源。</li>
-<li>500 常见的服务器端错误</li>
+<li>export用于规定模块的对外接口</li>
+<li>import用于输入其他模块提供的功能</li>
 </ul>
-]]></content>
+<h3 id="模块化的好处"><a href="#模块化的好处" class="headerlink" title="模块化的好处"></a>模块化的好处</h3><ol>
+<li>防止命名冲突</li>
+<li>代码复用</li>
+<li>高维护性</li>
+</ol>
+<h3 id="模块暴露数据语法"><a href="#模块暴露数据语法" class="headerlink" title="模块暴露数据语法"></a>模块暴露数据语法</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">export let school &#x3D; &#39;123&#39;
+export function()&#123;
+    console.log(&#39;我们可以教给你开发技能&#39;)
+&#125;
+
+&#x2F;&#x2F;统一暴露
+let school &#x3D; &#39;123&#39;
+findJob()&#123;
+    console.log(&#39;我们可以帮助你&#39;)
+&#125;
+export &#123;school, findJob&#125;
+&#x2F;&#x2F;引入模块
+import * as m2 from &#39;.&#x2F;src&#x2F;js&#x2F;m2.js&#39;
+
+&#x2F;&#x2F;默认暴露
+export default&#123;
+    school:&#39;atg&#39;,
+    change: function()&#123;
+        console.log(&#39;我么可以&#39;)
+    &#125;
+&#125;
+&#x2F;&#x2F;引入
+import * as m3 from &#39;.&#x2F;src&#x2F;js&#x2F;m3.js&#39;
+&#x2F;&#x2F;用change方法
+m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="模块引入数据语法汇总"><a href="#模块引入数据语法汇总" class="headerlink" title="模块引入数据语法汇总"></a>模块引入数据语法汇总</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//1.通用的导入方式</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> m1 <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
+
+<span class="token comment">//2.解构赋值形式</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span>school<span class="token punctuation">,</span>teach<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span><span class="token keyword">default</span> <span class="token operator">*</span> <span class="token keyword">as</span> m3<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span>
+
+<span class="token comment">//3.简便形式  针对默认暴露</span>
+<span class="token keyword">import</span> m3 <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
-        <tag>计网</tag>
-        <tag>面试</tag>
+        <tag>ES6</tag>
       </tags>
   </entry>
   <entry>
