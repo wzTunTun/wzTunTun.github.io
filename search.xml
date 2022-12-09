@@ -49,6 +49,29 @@
       </tags>
   </entry>
   <entry>
+    <title>哈喽！你好！！</title>
+    <url>/2022/04/03/hello-world/</url>
+    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
+<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
+<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
+<hr>
+<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
+<hr>
+<h3 id="2022-04-11"><a href="#2022-04-11" class="headerlink" title="2022/04/11"></a>2022/04/11</h3><p>花了一周。。终于把JS啃完了，尝试着刷了几道力扣。目前只是过了一遍主要知识，实际上手较少，等到学完es6,ajax，开始上手react之后，开始着手具体项目。网课讲的JS还是太基础，朋友推荐了两本书，《JavaScript高级程序设计》、《你不知道的JavaScript》，希望能够以此更全面了解JavaScript，学习更加底层的知识。</p>
+<hr>
+<h3 id="2022-04-13"><a href="#2022-04-13" class="headerlink" title="2022/04/13"></a>2022/04/13</h3><p>es6结束。</p>
+<hr>
+<h3 id="2022-04-15"><a href="#2022-04-15" class="headerlink" title="2022/04/15"></a>2022/04/15</h3><p>AJAX结束，开始步入react，以及项目实战。</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>自我介绍</tag>
+        <tag>学习进度</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>innerHTML和createElement效率对比</title>
     <url>/2022/04/10/innerHTML%E5%92%8CcreateElement%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h3 id="动态创建元素的方式"><a href="#动态创建元素的方式" class="headerlink" title="动态创建元素的方式"></a>动态创建元素的方式</h3><ul>
@@ -126,26 +149,22 @@
       </tags>
   </entry>
   <entry>
-    <title>哈喽！你好！！</title>
-    <url>/2022/04/03/hello-world/</url>
-    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
-<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
-<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
-<hr>
-<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
-<hr>
-<h3 id="2022-04-11"><a href="#2022-04-11" class="headerlink" title="2022/04/11"></a>2022/04/11</h3><p>花了一周。。终于把JS啃完了，尝试着刷了几道力扣。目前只是过了一遍主要知识，实际上手较少，等到学完es6,ajax，开始上手react之后，开始着手具体项目。网课讲的JS还是太基础，朋友推荐了两本书，《JavaScript高级程序设计》、《你不知道的JavaScript》，希望能够以此更全面了解JavaScript，学习更加底层的知识。</p>
-<hr>
-<h3 id="2022-04-13"><a href="#2022-04-13" class="headerlink" title="2022/04/13"></a>2022/04/13</h3><p>es6结束。</p>
-<hr>
-<h3 id="2022-04-15"><a href="#2022-04-15" class="headerlink" title="2022/04/15"></a>2022/04/15</h3><p>AJAX结束，开始步入react，以及项目实战。</p>
+    <title>协同算法之OT和CRDT</title>
+    <url>/2022/07/07/ot%E5%92%8Ccrdt/</url>
+    <content><![CDATA[<h3 id="多人协同编辑"><a href="#多人协同编辑" class="headerlink" title="多人协同编辑"></a>多人协同编辑</h3><p>多人协同编辑，就是像腾讯文档等在线产品一样，可以两人及以上同时编辑一个文件，而双方的编辑操作互不干扰，能够自动解决冲突。<br>而目前，协同编辑的基本实现思路主要有两种</p>
+<ul>
+<li>CRDT</li>
+<li>OT<h4 id="CRDT"><a href="#CRDT" class="headerlink" title="CRDT"></a>CRDT</h4>CRDT即为无冲突可复制数据类型，是一些分布式系统中适应于不同场景且可以保持最终以执行的数据结构统称。CRDT本身只是一个概念，需要自行实现数据结构。<h5 id="CRDT的类型"><a href="#CRDT的类型" class="headerlink" title="CRDT的类型"></a>CRDT的类型</h5></li>
+<li>基于操作状态的CRDT</li>
+<li>基于状态的CRDT<br>这两种CRDT在数学上是等价的，可以相互装换。基于操作的CRDT需要消息中间件提供额外的支持，对操作命名并保证通信过程中不会丢失或者交递信息时保证消息唯一。基于状态的消息中间件则需要通信时保证全部的状态完好的交递。<h5 id="基于操作的CRDT"><a href="#基于操作的CRDT" class="headerlink" title="基于操作的CRDT"></a>基于操作的CRDT</h5>基于操作的CRDT又称CMCRDT，CMCRDT在传播时，只包含数据更新操作信息。比方说，一个整数在执行了(+10), (-20) 操作后，CmRDT 广播时则只包含关于这个整数进行了(+10), (-20) 操作。其他的 DC 收到这个 CmRDT 后会在本地对相应的数据执行 CmRDT 中包含的操作。CmRDT 所能携带的操作必须是可交换的，通信模块必须保证所有 CmRDT 包都能被正确交递，但是顺序无需保证。<h5 id="基于状态的CRDT"><a href="#基于状态的CRDT" class="headerlink" title="基于状态的CRDT"></a>基于状态的CRDT</h5>基于状态的 CRDTs又称为CvRDTs。CvRDTs 会将本地全部的数据状态传播给其他 DC, 这些状态在接受到后会被一个函数做 merge 处理，所以这些状态必须是可交换的，关联的，幂等的。merge 函数会为在 CvRDT 之间提供一个 join 操作，将接收到 CvRDT 与本地数据合并。<h4 id="OT"><a href="#OT" class="headerlink" title="OT"></a>OT</h4>OT即为操作转换，是指对文档编辑以及同时编辑冲突解决的一类技术，且依赖服务器来保持最终一致性。</li>
+</ul>
 ]]></content>
       <categories>
-        <category>日常</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>自我介绍</tag>
-        <tag>学习进度</tag>
+        <tag>多人协同</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -287,25 +306,6 @@ title可省略
       </categories>
       <tags>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>协同算法之OT和CRDT</title>
-    <url>/2022/07/07/ot%E5%92%8Ccrdt/</url>
-    <content><![CDATA[<h3 id="多人协同编辑"><a href="#多人协同编辑" class="headerlink" title="多人协同编辑"></a>多人协同编辑</h3><p>多人协同编辑，就是像腾讯文档等在线产品一样，可以两人及以上同时编辑一个文件，而双方的编辑操作互不干扰，能够自动解决冲突。<br>而目前，协同编辑的基本实现思路主要有两种</p>
-<ul>
-<li>CRDT</li>
-<li>OT<h4 id="CRDT"><a href="#CRDT" class="headerlink" title="CRDT"></a>CRDT</h4>CRDT即为无冲突可复制数据类型，是一些分布式系统中适应于不同场景且可以保持最终以执行的数据结构统称。CRDT本身只是一个概念，需要自行实现数据结构。<h5 id="CRDT的类型"><a href="#CRDT的类型" class="headerlink" title="CRDT的类型"></a>CRDT的类型</h5></li>
-<li>基于操作状态的CRDT</li>
-<li>基于状态的CRDT<br>这两种CRDT在数学上是等价的，可以相互装换。基于操作的CRDT需要消息中间件提供额外的支持，对操作命名并保证通信过程中不会丢失或者交递信息时保证消息唯一。基于状态的消息中间件则需要通信时保证全部的状态完好的交递。<h5 id="基于操作的CRDT"><a href="#基于操作的CRDT" class="headerlink" title="基于操作的CRDT"></a>基于操作的CRDT</h5>基于操作的CRDT又称CMCRDT，CMCRDT在传播时，只包含数据更新操作信息。比方说，一个整数在执行了(+10), (-20) 操作后，CmRDT 广播时则只包含关于这个整数进行了(+10), (-20) 操作。其他的 DC 收到这个 CmRDT 后会在本地对相应的数据执行 CmRDT 中包含的操作。CmRDT 所能携带的操作必须是可交换的，通信模块必须保证所有 CmRDT 包都能被正确交递，但是顺序无需保证。<h5 id="基于状态的CRDT"><a href="#基于状态的CRDT" class="headerlink" title="基于状态的CRDT"></a>基于状态的CRDT</h5>基于状态的 CRDTs又称为CvRDTs。CvRDTs 会将本地全部的数据状态传播给其他 DC, 这些状态在接受到后会被一个函数做 merge 处理，所以这些状态必须是可交换的，关联的，幂等的。merge 函数会为在 CvRDT 之间提供一个 join 操作，将接收到 CvRDT 与本地数据合并。<h4 id="OT"><a href="#OT" class="headerlink" title="OT"></a>OT</h4>OT即为操作转换，是指对文档编辑以及同时编辑冲突解决的一类技术，且依赖服务器来保持最终一致性。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>多人协同</tag>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -515,59 +515,6 @@ title可省略
       </tags>
   </entry>
   <entry>
-    <title>两数之和-年轻人的第一道力扣</title>
-    <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
-<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
-<p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
-</blockquote>
-<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class="line-numbers language-none"><code class="language-none">输入：nums &#x3D; [2,7,11,15], target &#x3D; 9
-输出：[0,1]
-解释：因为 nums[0] + nums[1] &#x3D;&#x3D; 9 ，返回 [0, 1] 。
-
-来源：力扣（LeetCode）
-链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;two-sum
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="开始解题"><a href="#开始解题" class="headerlink" title="开始解题"></a>开始解题</h3><h5 id="自己的思考"><a href="#自己的思考" class="headerlink" title="自己的思考"></a>自己的思考</h5><p>由于没有什么算法基础，看到题目首先自然而然想到的就是暴力求解😂。通过两次循环，先从头选定数组的第一个元素，然后遍历剩下的元素，如果找到和等于target的就输出，否则进入下一次循环。<br>代码如下</p>
-<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var twoSum &#x3D; function(nums, target) &#123;
-    
-    for(var i &#x3D; 0;i&lt;nums.length;i++)&#123;
-        for(var j&#x3D;i+1;j&lt;nums.length;j++)
-            if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;
-                return [i,j];
-                break
-            &#125;
-        &#125;
-        
-    &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>当然，效果就很拉跨。<br><img src="https://s1.ax1x.com/2022/04/09/LFGpmd.png" alt="结果" title="执行结果"></p>
-<h5 id="交流学习"><a href="#交流学习" class="headerlink" title="交流学习"></a>交流学习</h5><p>自己用笨办法求解完之后，查看了官方的解法————利用哈希表。</p>
-<h6 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h6><p>运用暴力法寻找和等于target的目标的复杂度太高，由于有两次循环，因此时间复杂度为$O(N^2)$。而运用哈希表，可以将时间复杂度从$O(N^2)$降低到$O(1)$。</p>
-<p>原理就是，我们遍历到数字 x 时，用 target 减去 x，就会得到 y，若 y 存在于哈希表中，我们就可以直接返回结果了。若 y 不存在，那么我们需要将 x 存入哈希表，好让后续遍历的数字使用。<br>代码如下</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">const</span> d <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
-        <span class="token punctuation">&#125;</span>
-        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>最终提交后，执行用时果然快了不少</p>
-<p><img src="https://s1.ax1x.com/2022/04/10/LF0C7D.png" alt="结果"></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>算法</tag>
-        <tag>力扣</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>模块化</title>
     <url>/2022/06/04/%E6%A8%A1%E5%9D%97%E5%8C%96/</url>
     <content><![CDATA[<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><blockquote>
@@ -624,6 +571,59 @@ m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></sp
       </categories>
       <tags>
         <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>两数之和-年轻人的第一道力扣</title>
+    <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
+<p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
+</blockquote>
+<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class="line-numbers language-none"><code class="language-none">输入：nums &#x3D; [2,7,11,15], target &#x3D; 9
+输出：[0,1]
+解释：因为 nums[0] + nums[1] &#x3D;&#x3D; 9 ，返回 [0, 1] 。
+
+来源：力扣（LeetCode）
+链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;two-sum
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="开始解题"><a href="#开始解题" class="headerlink" title="开始解题"></a>开始解题</h3><h5 id="自己的思考"><a href="#自己的思考" class="headerlink" title="自己的思考"></a>自己的思考</h5><p>由于没有什么算法基础，看到题目首先自然而然想到的就是暴力求解😂。通过两次循环，先从头选定数组的第一个元素，然后遍历剩下的元素，如果找到和等于target的就输出，否则进入下一次循环。<br>代码如下</p>
+<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var twoSum &#x3D; function(nums, target) &#123;
+    
+    for(var i &#x3D; 0;i&lt;nums.length;i++)&#123;
+        for(var j&#x3D;i+1;j&lt;nums.length;j++)
+            if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;
+                return [i,j];
+                break
+            &#125;
+        &#125;
+        
+    &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当然，效果就很拉跨。<br><img src="https://s1.ax1x.com/2022/04/09/LFGpmd.png" alt="结果" title="执行结果"></p>
+<h5 id="交流学习"><a href="#交流学习" class="headerlink" title="交流学习"></a>交流学习</h5><p>自己用笨办法求解完之后，查看了官方的解法————利用哈希表。</p>
+<h6 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h6><p>运用暴力法寻找和等于target的目标的复杂度太高，由于有两次循环，因此时间复杂度为$O(N^2)$。而运用哈希表，可以将时间复杂度从$O(N^2)$降低到$O(1)$。</p>
+<p>原理就是，我们遍历到数字 x 时，用 target 减去 x，就会得到 y，若 y 存在于哈希表中，我们就可以直接返回结果了。若 y 不存在，那么我们需要将 x 存入哈希表，好让后续遍历的数字使用。<br>代码如下</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">const</span> d <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
+        <span class="token punctuation">&#125;</span>
+        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>最终提交后，执行用时果然快了不少</p>
+<p><img src="https://s1.ax1x.com/2022/04/10/LF0C7D.png" alt="结果"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>算法</tag>
+        <tag>力扣</tag>
       </tags>
   </entry>
   <entry>
