@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>哈喽！你好！！</title>
+    <url>/2022/04/03/hello-world/</url>
+    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
+<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
+<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
+<hr>
+<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
+<hr>
+<h3 id="2022-04-11"><a href="#2022-04-11" class="headerlink" title="2022/04/11"></a>2022/04/11</h3><p>花了一周。。终于把JS啃完了，尝试着刷了几道力扣。目前只是过了一遍主要知识，实际上手较少，等到学完es6,ajax，开始上手react之后，开始着手具体项目。网课讲的JS还是太基础，朋友推荐了两本书，《JavaScript高级程序设计》、《你不知道的JavaScript》，希望能够以此更全面了解JavaScript，学习更加底层的知识。</p>
+<hr>
+<h3 id="2022-04-13"><a href="#2022-04-13" class="headerlink" title="2022/04/13"></a>2022/04/13</h3><p>es6结束。</p>
+<hr>
+<h3 id="2022-04-15"><a href="#2022-04-15" class="headerlink" title="2022/04/15"></a>2022/04/15</h3><p>AJAX结束，开始步入react，以及项目实战。</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>自我介绍</tag>
+        <tag>学习进度</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TCP和UDP</title>
     <url>/2022/06/13/TCP%E5%92%8CUDP/</url>
     <content><![CDATA[<h3 id="TCP和UDP"><a href="#TCP和UDP" class="headerlink" title="TCP和UDP"></a>TCP和UDP</h3><h4 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h4><ul>
@@ -46,29 +69,6 @@
       <tags>
         <tag>计网</tag>
         <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>哈喽！你好！！</title>
-    <url>/2022/04/03/hello-world/</url>
-    <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
-<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p><strong>化名：</strong>李孙<br><strong>性别：</strong>男<br><strong>昵称：</strong>无证豚豚<br><strong>外号：</strong>（超级多，就不一一列举了）<br><strong>状态：</strong>单身<br><strong>爱好：</strong>出门闲晃，旅游，摄影，打音游，交朋友，上网冲浪<br><strong>外貌：</strong>和猪一样</p>
-<h1 id="闲话"><a href="#闲话" class="headerlink" title="闲话"></a>闲话</h1><p>22年年初决定试试某岗位实习生，在一顿海投但收获为零之后，意识到了自己确实缺乏竞争力，在朋友的建议下，毅然决然准备转行前端。</p>
-<hr>
-<h1 id="菜鸟进度"><a href="#菜鸟进度" class="headerlink" title="菜鸟进度"></a>菜鸟进度</h1><h3 id="2022-04-04"><a href="#2022-04-04" class="headerlink" title="2022/04/04"></a>2022/04/04</h3><p>花了三天看html和css，昨天下午结束，然后开始搭建的这个博客，实在太上头，没继续学了，今天总算差不多了，明天开始学js。</p>
-<hr>
-<h3 id="2022-04-11"><a href="#2022-04-11" class="headerlink" title="2022/04/11"></a>2022/04/11</h3><p>花了一周。。终于把JS啃完了，尝试着刷了几道力扣。目前只是过了一遍主要知识，实际上手较少，等到学完es6,ajax，开始上手react之后，开始着手具体项目。网课讲的JS还是太基础，朋友推荐了两本书，《JavaScript高级程序设计》、《你不知道的JavaScript》，希望能够以此更全面了解JavaScript，学习更加底层的知识。</p>
-<hr>
-<h3 id="2022-04-13"><a href="#2022-04-13" class="headerlink" title="2022/04/13"></a>2022/04/13</h3><p>es6结束。</p>
-<hr>
-<h3 id="2022-04-15"><a href="#2022-04-15" class="headerlink" title="2022/04/15"></a>2022/04/15</h3><p>AJAX结束，开始步入react，以及项目实战。</p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>自我介绍</tag>
-        <tag>学习进度</tag>
       </tags>
   </entry>
   <entry>
@@ -362,6 +362,65 @@ title可省略
       </tags>
   </entry>
   <entry>
+    <title>模块化</title>
+    <url>/2022/06/04/%E6%A8%A1%E5%9D%97%E5%8C%96/</url>
+    <content><![CDATA[<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><blockquote>
+<p>模块化是指将一个大的程序文件，拆分成许多小的文件，然后将小文件组合起来</p>
+</blockquote>
+<p>模块化功能主要由两个命令构成：<code>export</code>和<code>import</code></p>
+<ul>
+<li>export 用于规定模块的对外接口</li>
+<li>import 用于输入其他模块提供的功能</li>
+</ul>
+<h3 id="模块化的好处"><a href="#模块化的好处" class="headerlink" title="模块化的好处"></a>模块化的好处</h3><ol>
+<li>防止命名冲突</li>
+<li>代码复用</li>
+<li>高维护性</li>
+</ol>
+<h3 id="模块暴露数据语法"><a href="#模块暴露数据语法" class="headerlink" title="模块暴露数据语法"></a>模块暴露数据语法</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">export let school &#x3D; &#39;123&#39;
+export function()&#123;
+    console.log(&#39;我们可以教给你开发技能&#39;)
+&#125;
+
+&#x2F;&#x2F;统一暴露
+let school &#x3D; &#39;123&#39;
+findJob()&#123;
+    console.log(&#39;我们可以帮助你&#39;)
+&#125;
+export &#123;school, findJob&#125;
+&#x2F;&#x2F;引入模块
+import * as m2 from &#39;.&#x2F;src&#x2F;js&#x2F;m2.js&#39;
+
+&#x2F;&#x2F;默认暴露
+export default&#123;
+    school:&#39;atg&#39;,
+    change: function()&#123;
+        console.log(&#39;我么可以&#39;)
+    &#125;
+&#125;
+&#x2F;&#x2F;引入
+import * as m3 from &#39;.&#x2F;src&#x2F;js&#x2F;m3.js&#39;
+&#x2F;&#x2F;用change方法
+m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="模块引入数据语法汇总"><a href="#模块引入数据语法汇总" class="headerlink" title="模块引入数据语法汇总"></a>模块引入数据语法汇总</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//1.通用的导入方式</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> m1 <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
+
+<span class="token comment">//2.解构赋值形式</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span>school<span class="token punctuation">,</span>teach<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span><span class="token keyword">default</span> <span class="token operator">*</span> <span class="token keyword">as</span> m3<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span>
+
+<span class="token comment">//3.简便形式  针对默认暴露</span>
+<span class="token keyword">import</span> m3 <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>浅谈受控组件</title>
     <url>/2022/04/17/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6/</url>
     <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>跟着网课学习react的过程中，在做评论区模块的过程中，遇到这样一串代码。</p>
@@ -394,63 +453,6 @@ title可省略
       </categories>
       <tags>
         <tag>React</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>模块化</title>
-    <url>/2022/06/04/%E6%A8%A1%E5%9D%97%E5%8C%96/</url>
-    <content><![CDATA[<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><blockquote>
-<p>模块化是指将一个大的程序文件，拆分成许多小的文件，然后将小文件组合起来</p>
-</blockquote>
-<p>模块化功能主要由两个命令构成：<code>export</code>和<code>import</code></p>
-<ul>
-<li>export用于规定模块的对外接口</li>
-<li>import用于输入其他模块提供的功能</li>
-</ul>
-<h3 id="模块化的好处"><a href="#模块化的好处" class="headerlink" title="模块化的好处"></a>模块化的好处</h3><ol>
-<li>防止命名冲突</li>
-<li>代码复用</li>
-<li>高维护性</li>
-</ol>
-<h3 id="模块暴露数据语法"><a href="#模块暴露数据语法" class="headerlink" title="模块暴露数据语法"></a>模块暴露数据语法</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">export let school &#x3D; &#39;123&#39;
-export function()&#123;
-    console.log(&#39;我们可以教给你开发技能&#39;)
-&#125;
-
-&#x2F;&#x2F;统一暴露
-let school &#x3D; &#39;123&#39;
-findJob()&#123;
-    console.log(&#39;我们可以帮助你&#39;)
-&#125;
-export &#123;school, findJob&#125;
-&#x2F;&#x2F;引入模块
-import * as m2 from &#39;.&#x2F;src&#x2F;js&#x2F;m2.js&#39;
-
-&#x2F;&#x2F;默认暴露
-export default&#123;
-    school:&#39;atg&#39;,
-    change: function()&#123;
-        console.log(&#39;我么可以&#39;)
-    &#125;
-&#125;
-&#x2F;&#x2F;引入
-import * as m3 from &#39;.&#x2F;src&#x2F;js&#x2F;m3.js&#39;
-&#x2F;&#x2F;用change方法
-m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="模块引入数据语法汇总"><a href="#模块引入数据语法汇总" class="headerlink" title="模块引入数据语法汇总"></a>模块引入数据语法汇总</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//1.通用的导入方式</span>
-<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> m1 <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
-
-<span class="token comment">//2.解构赋值形式</span>
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span>school<span class="token punctuation">,</span>teach<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span><span class="token keyword">default</span> <span class="token operator">*</span> <span class="token keyword">as</span> m3<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span>
-
-<span class="token comment">//3.简便形式  针对默认暴露</span>
-<span class="token keyword">import</span> m3 <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>ES6</tag>
       </tags>
   </entry>
   <entry>
