@@ -1,54 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>TCP和UDP</title>
-    <url>/2022/06/13/TCP%E5%92%8CUDP/</url>
-    <content><![CDATA[<h3 id="TCP和UDP"><a href="#TCP和UDP" class="headerlink" title="TCP和UDP"></a>TCP和UDP</h3><h4 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h4><ul>
-<li><p>TCP是面向连接的服务，在传输至前必须要建立起连接，传输数据后要释放连接。</p>
-</li>
-<li><p>TCP不提供广播或多播服务。</p>
-</li>
-<li><p>TCP利用校验和、序列号、超时重传、流量控制以及拥塞避免的方式保证传输的可靠性。</p>
-<ul>
-<li>应用数据被分割成TCP认为的最适合发送的数据块。TCP给发送的每一个包进行编号，接收方对数据包进行排序，把有序数据传送给应用层。</li>
-<li>校验和：TCP将保持它首部和数据的校验和。这是一个端到端的校验和，目的是监测数据在传输过程中的任何变化。如果收到段检验出现问题，则将丢掉这个报文段并不确认收到此段。</li>
-<li>TCP接收端会丢弃重复的数据。</li>
-<li>流量控制：TCP连接的每一个地方都有固定大小的缓冲空间，TCP的接收端只允许发送端发送接收端缓冲区能够接纳的数据，若速率太快，会提示发送端降低发送的速率，防止包的丢失。</li>
-<li>拥塞控制：当网络拥塞时，减少数据的发送。</li>
-<li>ARQ协议：为了实现可靠传输，它的基本原理就是每发送一个分组就停止发送，等待对方确认后，再发送下一个。</li>
-<li>超时重传：当发送一个段后，会启动一个定时器，若目的端不能及时收到确认，则会重新发送报文段。</li>
-</ul>
-</li>
-<li><p>TCP一般用于文件传输、发送和接收邮件、远程登录等场景。</p>
-</li>
-<li><p>TCP以字节流的形式进行传输。</p>
-</li>
-<li><p>因为设有缓存，TCP允许通信双方的应用程序在任何时候都能发送数据</p>
-</li>
-</ul>
-<h4 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h4><ul>
-<li>在传送数据之前不需要先建立连接，远地主机在收到 UDP 报文后，不需要给出任何确认。</li>
-<li>虽然 UDP 不提供可靠交付。</li>
-<li>UDP以独立报文形式一个一个进行传输。</li>
-</ul>
-<h4 id="TCP和UDP的区别"><a href="#TCP和UDP的区别" class="headerlink" title="TCP和UDP的区别"></a>TCP和UDP的区别</h4><ol>
-<li>TCP 面向连接（（如打电话要先拨号建立连接）;UDP 是无连接的，即发送数据之前不需要建立连接。</li>
-<li>TCP 要求安全性，提供可靠的服务，通过 TCP 连接传送的数据，不丢失、不重复、安全可靠。而 UDP 尽最大努力交付，即不保证可靠交付。</li>
-<li>TCP 是点对点连接的，UDP 一对一，一对多，多对多都可以。</li>
-<li>TCP 传输效率相对较低，而 UDP 传输效率高，它适用于对高速传输和实时性有较高的通信或广播通信。</li>
-<li>TCP 适合用于网页，邮件等；UDP 适合用于视频，语音广播等。</li>
-<li>TCP 面向字节流，UDP 面向报文。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>计网</tag>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>哈喽！你好！！</title>
     <url>/2022/04/03/hello-world/</url>
     <content><![CDATA[<p>我是李孙，全世界最想变成猪的男人，你也可以叫我豚豚，Kevin，小俊,饼干兄…这是我的个人博客，用来分享前端学习以及日常生活。</p>
@@ -290,6 +242,107 @@ title可省略
       </tags>
   </entry>
   <entry>
+    <title>TCP和UDP</title>
+    <url>/2022/06/13/TCP%E5%92%8CUDP/</url>
+    <content><![CDATA[<h3 id="TCP和UDP"><a href="#TCP和UDP" class="headerlink" title="TCP和UDP"></a>TCP和UDP</h3><h4 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h4><ul>
+<li><p>TCP是面向连接的服务，在传输至前必须要建立起连接，传输数据后要释放连接。</p>
+</li>
+<li><p>TCP不提供广播或多播服务。</p>
+</li>
+<li><p>TCP利用校验和、序列号、超时重传、流量控制以及拥塞避免的方式保证传输的可靠性。</p>
+<ul>
+<li>应用数据被分割成TCP认为的最适合发送的数据块。TCP给发送的每一个包进行编号，接收方对数据包进行排序，把有序数据传送给应用层。</li>
+<li>校验和：TCP将保持它首部和数据的校验和。这是一个端到端的校验和，目的是监测数据在传输过程中的任何变化。如果收到段检验出现问题，则将丢掉这个报文段并不确认收到此段。</li>
+<li>TCP接收端会丢弃重复的数据。</li>
+<li>流量控制：TCP连接的每一个地方都有固定大小的缓冲空间，TCP的接收端只允许发送端发送接收端缓冲区能够接纳的数据，若速率太快，会提示发送端降低发送的速率，防止包的丢失。</li>
+<li>拥塞控制：当网络拥塞时，减少数据的发送。</li>
+<li>ARQ协议：为了实现可靠传输，它的基本原理就是每发送一个分组就停止发送，等待对方确认后，再发送下一个。</li>
+<li>超时重传：当发送一个段后，会启动一个定时器，若目的端不能及时收到确认，则会重新发送报文段。</li>
+</ul>
+</li>
+<li><p>TCP一般用于文件传输、发送和接收邮件、远程登录等场景。</p>
+</li>
+<li><p>TCP以字节流的形式进行传输。</p>
+</li>
+<li><p>因为设有缓存，TCP允许通信双方的应用程序在任何时候都能发送数据</p>
+</li>
+</ul>
+<h4 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h4><ul>
+<li>在传送数据之前不需要先建立连接，远地主机在收到 UDP 报文后，不需要给出任何确认。</li>
+<li>虽然 UDP 不提供可靠交付。</li>
+<li>UDP以独立报文形式一个一个进行传输。</li>
+</ul>
+<h4 id="TCP和UDP的区别"><a href="#TCP和UDP的区别" class="headerlink" title="TCP和UDP的区别"></a>TCP和UDP的区别</h4><ol>
+<li>TCP 面向连接（（如打电话要先拨号建立连接）;UDP 是无连接的，即发送数据之前不需要建立连接。</li>
+<li>TCP 要求安全性，提供可靠的服务，通过 TCP 连接传送的数据，不丢失、不重复、安全可靠。而 UDP 尽最大努力交付，即不保证可靠交付。</li>
+<li>TCP 是点对点连接的，UDP 一对一，一对多，多对多都可以。</li>
+<li>TCP 传输效率相对较低，而 UDP 传输效率高，它适用于对高速传输和实时性有较高的通信或广播通信。</li>
+<li>TCP 适合用于网页，邮件等；UDP 适合用于视频，语音广播等。</li>
+<li>TCP 面向字节流，UDP 面向报文。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>计网</tag>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>两数之和-年轻人的第一道力扣</title>
+    <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
+<p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
+</blockquote>
+<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class="line-numbers language-none"><code class="language-none">输入：nums &#x3D; [2,7,11,15], target &#x3D; 9
+输出：[0,1]
+解释：因为 nums[0] + nums[1] &#x3D;&#x3D; 9 ，返回 [0, 1] 。
+
+来源：力扣（LeetCode）
+链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;two-sum
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="开始解题"><a href="#开始解题" class="headerlink" title="开始解题"></a>开始解题</h3><h5 id="自己的思考"><a href="#自己的思考" class="headerlink" title="自己的思考"></a>自己的思考</h5><p>由于没有什么算法基础，看到题目首先自然而然想到的就是暴力求解😂。通过两次循环，先从头选定数组的第一个元素，然后遍历剩下的元素，如果找到和等于target的就输出，否则进入下一次循环。<br>代码如下</p>
+<pre class="line-numbers language-javaScript" data-language="javaScript"><code class="language-javaScript">var twoSum &#x3D; function(nums, target) &#123;
+    
+    for(var i &#x3D; 0;i&lt;nums.length;i++)&#123;
+        for(var j&#x3D;i+1;j&lt;nums.length;j++)
+            if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;
+                return [i,j];
+                break
+            &#125;
+        &#125;
+        
+    &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当然，效果就很拉跨。<br><img src="https://s1.ax1x.com/2022/04/09/LFGpmd.png" alt="结果" title="执行结果"></p>
+<h5 id="交流学习"><a href="#交流学习" class="headerlink" title="交流学习"></a>交流学习</h5><p>自己用笨办法求解完之后，查看了官方的解法————利用哈希表。</p>
+<h6 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h6><p>运用暴力法寻找和等于target的目标的复杂度太高，由于有两次循环，因此时间复杂度为$O(N^2)$。而运用哈希表，可以将时间复杂度从$O(N^2)$降低到$O(1)$。</p>
+<p>原理就是，我们遍历到数字 x 时，用 target 减去 x，就会得到 y，若 y 存在于哈希表中，我们就可以直接返回结果了。若 y 不存在，那么我们需要将 x 存入哈希表，好让后续遍历的数字使用。<br>代码如下</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">const</span> d <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
+        <span class="token punctuation">&#125;</span>
+        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>最终提交后，执行用时果然快了不少</p>
+<p><img src="https://s1.ax1x.com/2022/04/10/LF0C7D.png" alt="结果"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>力扣</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>协同算法之OT和CRDT</title>
     <url>/2022/07/07/ot%E5%92%8Ccrdt/</url>
     <content><![CDATA[<h3 id="多人协同编辑"><a href="#多人协同编辑" class="headerlink" title="多人协同编辑"></a>多人协同编辑</h3><p>多人协同编辑，就是像腾讯文档等在线产品一样，可以两人及以上同时编辑一个文件，而双方的编辑操作互不干扰，能够自动解决冲突。<br>而目前，协同编辑的基本实现思路主要有两种</p>
@@ -304,102 +357,8 @@ title可省略
         <category>学习</category>
       </categories>
       <tags>
-        <tag>多人协同</tag>
         <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>模块化</title>
-    <url>/2022/06/04/%E6%A8%A1%E5%9D%97%E5%8C%96/</url>
-    <content><![CDATA[<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><blockquote>
-<p>模块化是指将一个大的程序文件，拆分成许多小的文件，然后将小文件组合起来</p>
-</blockquote>
-<p>模块化功能主要由两个命令构成：<code>export</code>和<code>import</code></p>
-<ul>
-<li>export 用于规定模块的对外接口</li>
-<li>import 用于输入其他模块提供的功能</li>
-</ul>
-<h3 id="模块化的好处"><a href="#模块化的好处" class="headerlink" title="模块化的好处"></a>模块化的好处</h3><ol>
-<li>防止命名冲突</li>
-<li>代码复用</li>
-<li>高维护性</li>
-</ol>
-<h3 id="模块暴露数据语法"><a href="#模块暴露数据语法" class="headerlink" title="模块暴露数据语法"></a>模块暴露数据语法</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">export let school &#x3D; &#39;123&#39;
-export function()&#123;
-    console.log(&#39;我们可以教给你开发技能&#39;)
-&#125;
-
-&#x2F;&#x2F;统一暴露
-let school &#x3D; &#39;123&#39;
-findJob()&#123;
-    console.log(&#39;我们可以帮助你&#39;)
-&#125;
-export &#123;school, findJob&#125;
-&#x2F;&#x2F;引入模块
-import * as m2 from &#39;.&#x2F;src&#x2F;js&#x2F;m2.js&#39;
-
-&#x2F;&#x2F;默认暴露
-export default&#123;
-    school:&#39;atg&#39;,
-    change: function()&#123;
-        console.log(&#39;我么可以&#39;)
-    &#125;
-&#125;
-&#x2F;&#x2F;引入
-import * as m3 from &#39;.&#x2F;src&#x2F;js&#x2F;m3.js&#39;
-&#x2F;&#x2F;用change方法
-m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="模块引入数据语法汇总"><a href="#模块引入数据语法汇总" class="headerlink" title="模块引入数据语法汇总"></a>模块引入数据语法汇总</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//1.通用的导入方式</span>
-<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> m1 <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
-
-<span class="token comment">//2.解构赋值形式</span>
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span>school<span class="token punctuation">,</span>teach<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span><span class="token keyword">default</span> <span class="token operator">*</span> <span class="token keyword">as</span> m3<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span>
-
-<span class="token comment">//3.简便形式  针对默认暴露</span>
-<span class="token keyword">import</span> m3 <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>ES6</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>浅谈受控组件</title>
-    <url>/2022/04/17/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6/</url>
-    <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>跟着网课学习react的过程中，在做评论区模块的过程中，遇到这样一串代码。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">		<span class="token operator">...</span>上部省略
-<span class="token operator">&lt;</span>textarea
-                cols<span class="token operator">=</span><span class="token string">"80"</span>
-                rows<span class="token operator">=</span><span class="token string">"5"</span>
-                placeholder<span class="token operator">=</span><span class="token string">"发条友善的评论"</span>
-                className<span class="token operator">=</span><span class="token string">"ipt-txt"</span>
-                value<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>comment<span class="token punctuation">&#125;</span>
-                onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>textareaChange<span class="token punctuation">&#125;</span>
-              <span class="token operator">/</span><span class="token operator">></span>
-         <span class="token operator">...</span>下部省略<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>他设置了一个comment，再通过onChange监听当前textarea区域，把value值赋给comment，刚看到这串代码时，没明白为什么要以这种方式获取value，查阅相关资料后，才明白，react中表单组件的defaultValue值一旦经过传递后，后续改变都会被忽略，具体来说这原本是一种react非受控组件，其状态是在textarea的react内部控制，不受调用者控制。</p>
-<h3 id="受控组件"><a href="#受控组件" class="headerlink" title="受控组件"></a>受控组件</h3><p>什么是受控组件？  受控组件就是添加了value的组件，而添加了value的组件是不会维护自己的state的，一旦设定了某个值，就需要调用者控制state改变value值。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function-variable function">textareaChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">comment</span><span class="token operator">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>通过onChange时刻监听textarea，改变value的state，将最新的value值传给comment，来完成对组件的控制。</p>
-<blockquote>
-<p>参考：<a href="https://www.cnblogs.com/sexintercourse/p/16082406.html">https://www.cnblogs.com/sexintercourse/p/16082406.html</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>React</tag>
+        <tag>多人协同</tag>
       </tags>
   </entry>
   <entry>
@@ -574,62 +533,10 @@ m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></sp
       </tags>
   </entry>
   <entry>
-    <title>两数之和-年轻人的第一道力扣</title>
-    <url>/2022/04/09/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%8A%9B%E6%89%A3/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>终于终于，博主开始了艰苦LeetCode刷题的第一步，算法的起点———两数之和。</p>
-<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
-<p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
-</blockquote>
-<h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class="line-numbers language-none"><code class="language-none">输入：nums &#x3D; [2,7,11,15], target &#x3D; 9
-输出：[0,1]
-解释：因为 nums[0] + nums[1] &#x3D;&#x3D; 9 ，返回 [0, 1] 。
-
-来源：力扣（LeetCode）
-链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;two-sum
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="开始解题"><a href="#开始解题" class="headerlink" title="开始解题"></a>开始解题</h3><h5 id="自己的思考"><a href="#自己的思考" class="headerlink" title="自己的思考"></a>自己的思考</h5><p>由于没有什么算法基础，看到题目首先自然而然想到的就是暴力求解😂。通过两次循环，先从头选定数组的第一个元素，然后遍历剩下的元素，如果找到和等于target的就输出，否则进入下一次循环。<br>代码如下</p>
-<pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">var twoSum &#x3D; function(nums, target) &#123;
-    
-    for(var i &#x3D; 0;i&lt;nums.length;i++)&#123;
-        for(var j&#x3D;i+1;j&lt;nums.length;j++)
-            if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;
-                return [i,j];
-                break
-            &#125;
-        &#125;
-        
-    &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>当然，效果就很拉跨。<br><img src="https://s1.ax1x.com/2022/04/09/LFGpmd.png" alt="结果" title="执行结果"></p>
-<h5 id="交流学习"><a href="#交流学习" class="headerlink" title="交流学习"></a>交流学习</h5><p>自己用笨办法求解完之后，查看了官方的解法————利用哈希表。</p>
-<h6 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h6><p>运用暴力法寻找和等于target的目标的复杂度太高，由于有两次循环，因此时间复杂度为$O(N^2)$。而运用哈希表，可以将时间复杂度从$O(N^2)$降低到$O(1)$。</p>
-<p>原理就是，我们遍历到数字 x 时，用 target 减去 x，就会得到 y，若 y 存在于哈希表中，我们就可以直接返回结果了。若 y 不存在，那么我们需要将 x 存入哈希表，好让后续遍历的数字使用。<br>代码如下</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">const</span> d <span class="token operator">=</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            <span class="token keyword">return</span> <span class="token punctuation">[</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
-        <span class="token punctuation">&#125;</span>
-        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>最终提交后，执行用时果然快了不少</p>
-<p><img src="https://s1.ax1x.com/2022/04/10/LF0C7D.png" alt="结果"></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>算法</tag>
-        <tag>力扣</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>叮 博客将要迁移啦</title>
     <url>/2022/12/20/%E7%BD%91%E7%AB%99%E8%BF%81%E7%A7%BB/</url>
     <content><![CDATA[<p>当前域名下的博客是我刚开始学前端时用hexo搭建的，不得不说hexo真的是非常好用，不需要什么专业知识即可搭建。日后我会手搓一个新的博客，当前博客的所有内容也会迁移到新的博客中。目前还想到了很多有意思的功能，也可能会添加到里面。</p>
+<p>地址：<a href="http://118.25.185.177/">http://118.25.185.177/</a></p>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -637,6 +544,100 @@ m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></sp
       <tags>
         <tag>项目</tag>
         <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浅谈受控组件</title>
+    <url>/2022/04/17/%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6/</url>
+    <content><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>跟着网课学习react的过程中，在做评论区模块的过程中，遇到这样一串代码。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">		<span class="token operator">...</span>上部省略
+<span class="token operator">&lt;</span>textarea
+                cols<span class="token operator">=</span><span class="token string">"80"</span>
+                rows<span class="token operator">=</span><span class="token string">"5"</span>
+                placeholder<span class="token operator">=</span><span class="token string">"发条友善的评论"</span>
+                className<span class="token operator">=</span><span class="token string">"ipt-txt"</span>
+                value<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>comment<span class="token punctuation">&#125;</span>
+                onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>textareaChange<span class="token punctuation">&#125;</span>
+              <span class="token operator">/</span><span class="token operator">></span>
+         <span class="token operator">...</span>下部省略<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>他设置了一个comment，再通过onChange监听当前textarea区域，把value值赋给comment，刚看到这串代码时，没明白为什么要以这种方式获取value，查阅相关资料后，才明白，react中表单组件的defaultValue值一旦经过传递后，后续改变都会被忽略，具体来说这原本是一种react非受控组件，其状态是在textarea的react内部控制，不受调用者控制。</p>
+<h3 id="受控组件"><a href="#受控组件" class="headerlink" title="受控组件"></a>受控组件</h3><p>什么是受控组件？  受控组件就是添加了value的组件，而添加了value的组件是不会维护自己的state的，一旦设定了某个值，就需要调用者控制state改变value值。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function-variable function">textareaChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+      <span class="token literal-property property">comment</span><span class="token operator">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>通过onChange时刻监听textarea，改变value的state，将最新的value值传给comment，来完成对组件的控制。</p>
+<blockquote>
+<p>参考：<a href="https://www.cnblogs.com/sexintercourse/p/16082406.html">https://www.cnblogs.com/sexintercourse/p/16082406.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>React</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>模块化</title>
+    <url>/2022/06/04/%E6%A8%A1%E5%9D%97%E5%8C%96/</url>
+    <content><![CDATA[<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><blockquote>
+<p>模块化是指将一个大的程序文件，拆分成许多小的文件，然后将小文件组合起来</p>
+</blockquote>
+<p>模块化功能主要由两个命令构成：<code>export</code>和<code>import</code></p>
+<ul>
+<li>export 用于规定模块的对外接口</li>
+<li>import 用于输入其他模块提供的功能</li>
+</ul>
+<h3 id="模块化的好处"><a href="#模块化的好处" class="headerlink" title="模块化的好处"></a>模块化的好处</h3><ol>
+<li>防止命名冲突</li>
+<li>代码复用</li>
+<li>高维护性</li>
+</ol>
+<h3 id="模块暴露数据语法"><a href="#模块暴露数据语法" class="headerlink" title="模块暴露数据语法"></a>模块暴露数据语法</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">export let school &#x3D; &#39;123&#39;
+export function()&#123;
+    console.log(&#39;我们可以教给你开发技能&#39;)
+&#125;
+
+&#x2F;&#x2F;统一暴露
+let school &#x3D; &#39;123&#39;
+findJob()&#123;
+    console.log(&#39;我们可以帮助你&#39;)
+&#125;
+export &#123;school, findJob&#125;
+&#x2F;&#x2F;引入模块
+import * as m2 from &#39;.&#x2F;src&#x2F;js&#x2F;m2.js&#39;
+
+&#x2F;&#x2F;默认暴露
+export default&#123;
+    school:&#39;atg&#39;,
+    change: function()&#123;
+        console.log(&#39;我么可以&#39;)
+    &#125;
+&#125;
+&#x2F;&#x2F;引入
+import * as m3 from &#39;.&#x2F;src&#x2F;js&#x2F;m3.js&#39;
+&#x2F;&#x2F;用change方法
+m3.default.change()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="模块引入数据语法汇总"><a href="#模块引入数据语法汇总" class="headerlink" title="模块引入数据语法汇总"></a>模块引入数据语法汇总</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//1.通用的导入方式</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> m1 <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
+
+<span class="token comment">//2.解构赋值形式</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span>school<span class="token punctuation">,</span>teach<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m1.js'</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span><span class="token keyword">default</span> <span class="token operator">*</span> <span class="token keyword">as</span> m3<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span>
+
+<span class="token comment">//3.简便形式  针对默认暴露</span>
+<span class="token keyword">import</span> m3 <span class="token keyword">from</span> <span class="token string">'./src/js/m3.js'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>ES6</tag>
       </tags>
   </entry>
   <entry>
